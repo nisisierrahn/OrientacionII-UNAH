@@ -1,2623 +1,803 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:"Segoe UI Emoji";
-	panose-1:2 11 5 2 4 2 4 2 2 3;}
-@font-face
-	{font-family:Aptos;
-	panose-1:2 11 0 4 2 2 2 2 2 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:8.0pt;
-	margin-left:0in;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
-h1
-	{mso-style-link:"Heading 1 Char";
-	margin-top:.25in;
-	margin-right:0in;
-	margin-bottom:4.0pt;
-	margin-left:0in;
-	line-height:115%;
-	page-break-after:avoid;
-	font-size:20.0pt;
-	font-family:"Aptos Display",sans-serif;
-	color:#0F4761;
-	font-weight:normal;}
-h2
-	{mso-style-link:"Heading 2 Char";
-	margin-top:8.0pt;
-	margin-right:0in;
-	margin-bottom:4.0pt;
-	margin-left:0in;
-	line-height:115%;
-	page-break-after:avoid;
-	font-size:16.0pt;
-	font-family:"Aptos Display",sans-serif;
-	color:#0F4761;
-	font-weight:normal;}
-h3
-	{mso-style-link:"Heading 3 Char";
-	margin-top:8.0pt;
-	margin-right:0in;
-	margin-bottom:4.0pt;
-	margin-left:0in;
-	line-height:115%;
-	page-break-after:avoid;
-	font-size:14.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#0F4761;
-	font-weight:normal;}
-h4
-	{mso-style-link:"Heading 4 Char";
-	margin-top:4.0pt;
-	margin-right:0in;
-	margin-bottom:2.0pt;
-	margin-left:0in;
-	line-height:115%;
-	page-break-after:avoid;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#0F4761;
-	font-weight:normal;
-	font-style:italic;}
-h5
-	{mso-style-link:"Heading 5 Char";
-	margin-top:4.0pt;
-	margin-right:0in;
-	margin-bottom:2.0pt;
-	margin-left:0in;
-	line-height:115%;
-	page-break-after:avoid;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#0F4761;
-	font-weight:normal;}
-h6
-	{mso-style-link:"Heading 6 Char";
-	margin-top:2.0pt;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:0in;
-	line-height:115%;
-	page-break-after:avoid;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#595959;
-	font-weight:normal;
-	font-style:italic;}
-p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
-	{mso-style-link:"Heading 7 Char";
-	margin-top:2.0pt;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:0in;
-	line-height:115%;
-	page-break-after:avoid;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#595959;}
-p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
-	{mso-style-link:"Heading 8 Char";
-	margin:0in;
-	line-height:115%;
-	page-break-after:avoid;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#272727;
-	font-style:italic;}
-p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
-	{mso-style-link:"Heading 9 Char";
-	margin:0in;
-	line-height:115%;
-	page-break-after:avoid;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#272727;}
-p.MsoTitle, li.MsoTitle, div.MsoTitle
-	{mso-style-link:"Title Char";
-	margin-top:0in;
-	margin-right:0in;
-	margin-bottom:4.0pt;
-	margin-left:0in;
-	font-size:28.0pt;
-	font-family:"Aptos Display",sans-serif;
-	letter-spacing:-.5pt;}
-p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
-	{mso-style-link:"Title Char";
-	margin:0in;
-	font-size:28.0pt;
-	font-family:"Aptos Display",sans-serif;
-	letter-spacing:-.5pt;}
-p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
-	{mso-style-link:"Title Char";
-	margin:0in;
-	font-size:28.0pt;
-	font-family:"Aptos Display",sans-serif;
-	letter-spacing:-.5pt;}
-p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
-	{mso-style-link:"Title Char";
-	margin-top:0in;
-	margin-right:0in;
-	margin-bottom:4.0pt;
-	margin-left:0in;
-	font-size:28.0pt;
-	font-family:"Aptos Display",sans-serif;
-	letter-spacing:-.5pt;}
-p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
-	{mso-style-link:"Subtitle Char";
-	margin-top:0in;
-	margin-right:0in;
-	margin-bottom:8.0pt;
-	margin-left:0in;
-	line-height:115%;
-	font-size:14.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#595959;
-	letter-spacing:.75pt;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:8.0pt;
-	margin-left:.5in;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:.5in;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:.5in;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:8.0pt;
-	margin-left:.5in;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
-p.MsoQuote, li.MsoQuote, div.MsoQuote
-	{mso-style-link:"Quote Char";
-	margin-top:8.0pt;
-	margin-right:0in;
-	margin-bottom:8.0pt;
-	margin-left:0in;
-	text-align:center;
-	line-height:115%;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#404040;
-	font-style:italic;}
-p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
-	{mso-style-link:"Intense Quote Char";
-	margin-top:.25in;
-	margin-right:.6in;
-	margin-bottom:.25in;
-	margin-left:.6in;
-	text-align:center;
-	line-height:115%;
-	border:none;
-	padding:0in;
-	font-size:12.0pt;
-	font-family:"Aptos",sans-serif;
-	color:#0F4761;
-	font-style:italic;}
-span.MsoIntenseEmphasis
-	{color:#0F4761;
-	font-style:italic;}
-span.MsoIntenseReference
-	{font-variant:small-caps;
-	color:#0F4761;
-	letter-spacing:.25pt;
-	font-weight:bold;}
-span.Heading1Char
-	{mso-style-name:"Heading 1 Char";
-	mso-style-link:"Heading 1";
-	font-family:"Aptos Display",sans-serif;
-	color:#0F4761;}
-span.Heading2Char
-	{mso-style-name:"Heading 2 Char";
-	mso-style-link:"Heading 2";
-	font-family:"Aptos Display",sans-serif;
-	color:#0F4761;}
-span.Heading3Char
-	{mso-style-name:"Heading 3 Char";
-	mso-style-link:"Heading 3";
-	font-family:"Times New Roman",serif;
-	color:#0F4761;}
-span.Heading4Char
-	{mso-style-name:"Heading 4 Char";
-	mso-style-link:"Heading 4";
-	font-family:"Times New Roman",serif;
-	color:#0F4761;
-	font-style:italic;}
-span.Heading5Char
-	{mso-style-name:"Heading 5 Char";
-	mso-style-link:"Heading 5";
-	font-family:"Times New Roman",serif;
-	color:#0F4761;}
-span.Heading6Char
-	{mso-style-name:"Heading 6 Char";
-	mso-style-link:"Heading 6";
-	font-family:"Times New Roman",serif;
-	color:#595959;
-	font-style:italic;}
-span.Heading7Char
-	{mso-style-name:"Heading 7 Char";
-	mso-style-link:"Heading 7";
-	font-family:"Times New Roman",serif;
-	color:#595959;}
-span.Heading8Char
-	{mso-style-name:"Heading 8 Char";
-	mso-style-link:"Heading 8";
-	font-family:"Times New Roman",serif;
-	color:#272727;
-	font-style:italic;}
-span.Heading9Char
-	{mso-style-name:"Heading 9 Char";
-	mso-style-link:"Heading 9";
-	font-family:"Times New Roman",serif;
-	color:#272727;}
-span.TitleChar
-	{mso-style-name:"Title Char";
-	mso-style-link:Title;
-	font-family:"Aptos Display",sans-serif;
-	letter-spacing:-.5pt;}
-span.SubtitleChar
-	{mso-style-name:"Subtitle Char";
-	mso-style-link:Subtitle;
-	font-family:"Times New Roman",serif;
-	color:#595959;
-	letter-spacing:.75pt;}
-span.QuoteChar
-	{mso-style-name:"Quote Char";
-	mso-style-link:Quote;
-	color:#404040;
-	font-style:italic;}
-span.IntenseQuoteChar
-	{mso-style-name:"Intense Quote Char";
-	mso-style-link:"Intense Quote";
-	color:#0F4761;
-	font-style:italic;}
-.MsoChpDefault
-	{font-size:12.0pt;
-	font-family:"Aptos",sans-serif;}
-.MsoPapDefault
-	{margin-bottom:8.0pt;
-	line-height:115%;}
-@page WordSection1
-	{size:8.5in 11.0in;
-	margin:70.85pt 85.05pt 70.85pt 85.05pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientación para el Autodescubrimiento - Equipo UNAH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; }
+        .step-content { display: none; }
+        .step-content.active { display: block; }
+        #reporte-final.visible-report, #reporte-general.visible-report {
+            display: block !important;
+            background: white;
+            padding: 40px;
+            min-height: 100vh;
+        }
+        #reporte-final, #reporte-general { display: none; }
+        @media print {
+            body { background: white !important; padding: 0 !important; }
+            #app-container, #user-list-container, .no-print, #btn-volver-listado { display: none !important; }
+            #reporte-final, #reporte-general { display: block !important; position: absolute; left:0; top:0; width:100%; margin:0; padding:0; visibility: visible !important; }
+            #reporte-final *, #reporte-general * { visibility: visible !important; }
+            .print-section { page-break-inside: avoid; border-bottom:1px solid #eee; padding:15px 0; }
+            @page { size: portrait; margin: 1.5cm; }
+        }
+        .sesion-item { transition: all 0.2s; }
+    </style>
 </head>
-
-<body lang=EN-US style='word-wrap:break-word'>
-
-<div class=WordSection1>
-
-<p class=MsoNormal><span lang=ES-MX>&lt;!DOCTYPE html&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&lt;html lang=&quot;es&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&lt;head&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;meta charset=&quot;UTF-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;meta name=&quot;viewport&quot;
-content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;title&gt;Orientación para el
-Autodescubrimiento - Equipo UNAH&lt;/title&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;script
-src=&quot;https://cdn.jsdelivr.net/npm/chart.js&quot;&gt;&lt;/script&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;!-- Firebase SDKs (Compat) --&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;script
-src=&quot;https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js&quot;&gt;&lt;/script&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;script src=&quot;https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js&quot;&gt;&lt;/script&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;style&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        @import
-url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        body { font-family: 'Inter',
-sans-serif; background-color: #f1f5f9; }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        .step-content { display: none; }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        .step-content.active { display:
-block; }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        #reporte-final.visible-report,
-#reporte-general.visible-report {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            display: block !important;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            background: white;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            padding: 40px;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            min-height: 100vh;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        #reporte-final, #reporte-general {
-display: none; }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        @media print {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            body { background: white
-!important; padding: 0 !important; }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            #app-container, #user-list-container,
-.no-print, #btn-volver-listado { display: none !important; }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            #reporte-final,
-#reporte-general { display: block !important; position: absolute; left:0;
-top:0; width:100%; margin:0; padding:0; visibility: visible !important; }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            #reporte-final *,
-#reporte-general * { visibility: visible !important; }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            .print-section {
-page-break-inside: avoid; border-bottom:1px solid #eee; padding:15px 0; }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            @page { size: portrait; margin:
-1.5cm; }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        .sesion-item { transition: all
-0.2s; }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;/style&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&lt;/head&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&lt;body class=&quot;p-2 md:p-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;!-- LISTADO DE ESTUDIANTES --&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;div
-id=&quot;user-list-container&quot; class=&quot;max-w-5xl mx-auto&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        &lt;div class=&quot;bg-white
-shadow-2xl rounded-3xl overflow-hidden border border-slate-200 p-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div class=&quot;flex
-justify-between items-center mb-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;h1 class=&quot;text-2xl
-font-black uppercase text-indigo-900&quot;&gt;Estudiantes
-registrados&lt;/h1&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div class=&quot;flex
-gap-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;button
-onclick=&quot;mostrarReporteGeneral()&quot; class=&quot;bg-indigo-100
-text-indigo-700 px-6 py-3 rounded-xl text-xs font-bold uppercase
-hover:bg-indigo-200 transition&quot;&gt;Reporte general&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;button
-onclick=&quot;crearNuevoEstudiante()&quot; class=&quot;bg-indigo-600 text-white
-px-6 py-3 rounded-xl text-xs font-bold uppercase hover:bg-indigo-700 transition
-shadow&quot;&gt;+ Nuevo estudiante&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div
-id=&quot;user-cards&quot; class=&quot;grid grid-cols-1 md:grid-cols-2
-lg:grid-cols-3 gap-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;!-- Se llena con JS
---&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;!-- FORMULARIO INDIVIDUAL --&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;div class=&quot;max-w-5xl mx-auto
-no-print hidden&quot; id=&quot;app-container&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        &lt;div class=&quot;bg-white
-shadow-2xl rounded-3xl overflow-hidden border border-slate-200&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div
-class=&quot;bg-indigo-900 p-4 text-white flex justify-between
-items-center&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div class=&quot;flex
-items-center gap-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;button
-onclick=&quot;volverAlListado()&quot; class=&quot;bg-indigo-800
-hover:bg-indigo-700 px-4 py-2 rounded-lg text-xs font-bold uppercase flex
-items-center gap-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        ← Volver al listado</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div class=&quot;h-6
-w-px bg-indigo-700&quot;&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;h1
-class=&quot;text-lg font-black tracking-tighter uppercase&quot;&gt;Protocolo de
-Autodescubrimiento&lt;/h1&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;p
-class=&quot;text-indigo-300 text-[8px] font-bold uppercase&quot;&gt;Estudiante:
-&lt;span id=&quot;current-user-name-display&quot;&gt;&lt;/span&gt;&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div
-id=&quot;stepCounter&quot; class=&quot;bg-indigo-800 px-4 py-2 rounded-full
-text-[10px] font-bold uppercase border border-indigo-700&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    ETAPA 1/6</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;form
-id=&quot;mainForm&quot; class=&quot;p-6 md:p-10&quot; onsubmit=&quot;return
-false;&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;!-- ETAPA 1:
-Identificación --&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div
-id=&quot;step1&quot; class=&quot;step-content active&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-class=&quot;mb-8 border-b pb-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;h2
-class=&quot;text-2xl font-black uppercase text-indigo-900&quot;&gt;01. Datos
-del Estudiante&lt;/h2&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;p
-class=&quot;text-slate-500 text-sm italic&quot;&gt;Información básica para el
-proceso.&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-class=&quot;grid grid-cols-1 md:grid-cols-2 gap-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;space-y-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;label
-class=&quot;block text-[10px] font-black text-slate-400 uppercase tracking-widest&quot;&gt;Nombre
-completo&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;text&quot; id=&quot;entrevistado&quot; class=&quot;w-full
-bg-slate-50 border-2 border-slate-100 rounded-xl px-4 py-3
-focus:border-indigo-600 outline-none transition&quot; placeholder=&quot;Ej.
-María Pérez&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;space-y-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;label
-class=&quot;block text-[10px] font-black text-slate-400 uppercase
-tracking-widest&quot;&gt;Orientador responsable&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;text&quot; id=&quot;entrevistador&quot; class=&quot;w-full
-bg-slate-50 border-2 border-slate-100 rounded-xl px-4 py-3
-focus:border-indigo-600 outline-none transition&quot; placeholder=&quot;Tu
-nombre&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;space-y-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;label
-class=&quot;block text-[10px] font-black text-slate-400 uppercase
-tracking-widest&quot;&gt;Fecha de inicio&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;date&quot; id=&quot;fecha&quot; class=&quot;w-full bg-slate-50
-border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-indigo-600
-outline-none transition&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;space-y-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;label
-class=&quot;block text-[10px] font-black text-slate-400 uppercase
-tracking-widest&quot;&gt;Edad&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;number&quot; id=&quot;edad&quot; class=&quot;w-full bg-slate-50
-border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-indigo-600
-outline-none transition&quot; placeholder=&quot;18&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;!-- ETAPA 2: Entrevista
-inicial --&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div
-id=&quot;step2&quot; class=&quot;step-content&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-class=&quot;mb-8 border-b pb-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;h2
-class=&quot;text-2xl font-black uppercase text-indigo-900&quot;&gt;02.
-Entrevista de Diagnóstico&lt;/h2&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;p
-class=&quot;text-slate-500 text-sm&quot;&gt;Registra las respuestas del
-estudiante a estas preguntas abiertas.&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-class=&quot;space-y-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                       
-&lt;div&gt;&lt;label class=&quot;block text-xs font-bold text-indigo-800
-mb-2&quot;&gt;1. ¿Qué actividades te hacen perder la noción del tiempo y te
-generan satisfacción?&lt;/label&gt;&lt;textarea id=&quot;preg1&quot;
-rows=&quot;2&quot; class=&quot;w-full p-3 border-2 border-slate-100 rounded-xl
-focus:border-indigo-600 outline-none&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                       
-&lt;div&gt;&lt;label class=&quot;block text-xs font-bold text-indigo-800
-mb-2&quot;&gt;2. ¿Qué críticas o expectativas has recibido de tu familia sobre
-tu futuro profesional?&lt;/label&gt;&lt;textarea id=&quot;preg2&quot;
-rows=&quot;2&quot; class=&quot;w-full p-3 border-2 border-slate-100 rounded-xl
-focus:border-indigo-600 outline-none&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                       
-&lt;div&gt;&lt;label class=&quot;block text-xs font-bold text-indigo-800
-mb-2&quot;&gt;3. Describe un momento en que te sentiste completamente
-realizado/a.&lt;/label&gt;&lt;textarea id=&quot;preg3&quot; rows=&quot;2&quot;
-class=&quot;w-full p-3 border-2 border-slate-100 rounded-xl
-focus:border-indigo-600 outline-none&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div&gt;&lt;label
-class=&quot;block text-xs font-bold text-indigo-800 mb-2&quot;&gt;4. ¿Qué crees
-que espera la sociedad de ti en términos de carrera?&lt;/label&gt;&lt;textarea
-id=&quot;preg4&quot; rows=&quot;2&quot; class=&quot;w-full p-3 border-2
-border-slate-100 rounded-xl focus:border-indigo-600
-outline-none&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                       
-&lt;div&gt;&lt;label class=&quot;block text-xs font-bold text-indigo-800
-mb-2&quot;&gt;5. Si no hubiera limitaciones, ¿qué te gustaría hacer con tu
-vida?&lt;/label&gt;&lt;textarea id=&quot;preg5&quot; rows=&quot;2&quot; class=&quot;w-full
-p-3 border-2 border-slate-100 rounded-xl focus:border-indigo-600
-outline-none&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;!-- ETAPA 3:
-Influencias --&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div
-id=&quot;step3&quot; class=&quot;step-content&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-class=&quot;mb-8 border-b pb-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;h2
-class=&quot;text-2xl font-black uppercase text-indigo-900&quot;&gt;03.
-Influencias Externas&lt;/h2&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;p
-class=&quot;text-slate-500 text-sm&quot;&gt;Valora el grado de influencia y comenta.&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-class=&quot;grid grid-cols-1 md:grid-cols-2 gap-6&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;p-5 border-2 border-slate-100 rounded-3xl bg-white&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;div
-class=&quot;flex items-center gap-2 mb-4&quot;&gt;&lt;span
-class=&quot;bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs
-font-bold&quot;&gt;Familia&lt;/span&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;range&quot; id=&quot;inf-fam&quot; min=&quot;1&quot;
-max=&quot;5&quot; value=&quot;3&quot; class=&quot;w-full
-accent-indigo-600&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;div
-class=&quot;flex justify-between text-[10px] font-bold text-slate-400
-mt-1&quot;&gt;&lt;span&gt;Baja&lt;/span&gt;&lt;span&gt;Alta&lt;/span&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;textarea
-id=&quot;inf-fam-com&quot; placeholder=&quot;Comentarios...&quot;
-rows=&quot;2&quot; class=&quot;w-full mt-4 p-3 text-sm border rounded-xl
-bg-slate-50&quot;&gt;&lt;/textarea&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;p-5 border-2 border-slate-100 rounded-3xl bg-white&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;div
-class=&quot;flex items-center gap-2 mb-4&quot;&gt;&lt;span
-class=&quot;bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs
-font-bold&quot;&gt;Amigos / Grupo social&lt;/span&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;range&quot; id=&quot;inf-soc&quot; min=&quot;1&quot;
-max=&quot;5&quot; value=&quot;3&quot; class=&quot;w-full
-accent-indigo-600&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;div class=&quot;flex
-justify-between text-[10px] font-bold text-slate-400
-mt-1&quot;&gt;&lt;span&gt;Baja&lt;/span&gt;&lt;span&gt;Alta&lt;/span&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;textarea
-id=&quot;inf-soc-com&quot; placeholder=&quot;Comentarios...&quot;
-rows=&quot;2&quot; class=&quot;w-full mt-4 p-3 text-sm border rounded-xl
-bg-slate-50&quot;&gt;&lt;/textarea&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;p-5 border-2 border-slate-100 rounded-3xl bg-white&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;div
-class=&quot;flex items-center gap-2 mb-4&quot;&gt;&lt;span
-class=&quot;bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs
-font-bold&quot;&gt;Educación / Profesores&lt;/span&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;range&quot; id=&quot;inf-edu&quot; min=&quot;1&quot;
-max=&quot;5&quot; value=&quot;3&quot; class=&quot;w-full
-accent-indigo-600&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;div
-class=&quot;flex justify-between text-[10px] font-bold text-slate-400
-mt-1&quot;&gt;&lt;span&gt;Baja&lt;/span&gt;&lt;span&gt;Alta&lt;/span&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;textarea
-id=&quot;inf-edu-com&quot; placeholder=&quot;Comentarios...&quot;
-rows=&quot;2&quot; class=&quot;w-full mt-4 p-3 text-sm border rounded-xl
-bg-slate-50&quot;&gt;&lt;/textarea&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;p-5 border-2 border-slate-100 rounded-3xl bg-white&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;div
-class=&quot;flex items-center gap-2 mb-4&quot;&gt;&lt;span
-class=&quot;bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs
-font-bold&quot;&gt;Claridad de propósito actual&lt;/span&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;range&quot; id=&quot;inf-claridad&quot; min=&quot;1&quot;
-max=&quot;5&quot; value=&quot;3&quot; class=&quot;w-full
-accent-indigo-600&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;div
-class=&quot;flex justify-between text-[10px] font-bold text-slate-400
-mt-1&quot;&gt;&lt;span&gt;Difuso&lt;/span&gt;&lt;span&gt;Muy
-claro&lt;/span&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;!-- ETAPA 4: SMART
---&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div
-id=&quot;step4&quot; class=&quot;step-content&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-class=&quot;mb-8 border-b pb-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;h2
-class=&quot;text-2xl font-black uppercase text-indigo-900&quot;&gt;04. Metas
-SMART para el Autodescubrimiento&lt;/h2&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;p
-class=&quot;text-slate-500 text-sm&quot;&gt;Define objetivos específicos,
-medibles, alcanzables, relevantes y con plazo.&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-id=&quot;smartContainer&quot; class=&quot;space-y-4&quot;&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;button
-type=&quot;button&quot; onclick=&quot;agregarMeta()&quot; class=&quot;mt-4
-bg-indigo-100 text-indigo-700 px-6 py-3 rounded-xl text-xs font-bold uppercase
-hover:bg-indigo-200 transition&quot;&gt;+ Añadir otra meta&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;!-- ETAPA 5: Sesiones
---&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div
-id=&quot;step5&quot; class=&quot;step-content&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-class=&quot;mb-8 border-b pb-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;h2
-class=&quot;text-2xl font-black uppercase text-indigo-900&quot;&gt;05. Sesiones
-de Orientación&lt;/h2&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;p
-class=&quot;text-slate-500 text-sm&quot;&gt;Registra cada sesión con su
-objetivo y observaciones.&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-id=&quot;sesionesContainer&quot; class=&quot;space-y-4&quot;&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;button
-type=&quot;button&quot; onclick=&quot;agregarSesion()&quot; class=&quot;mt-4
-bg-indigo-100 text-indigo-700 px-6 py-3 rounded-xl text-xs font-bold uppercase
-hover:bg-indigo-200 transition&quot;&gt;+ Registrar nueva sesión&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;!-- ETAPA 6: Generar
-informe --&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div
-id=&quot;step6&quot; class=&quot;step-content text-center py-10&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-class=&quot;max-w-md mx-auto bg-indigo-50 p-10 rounded-[3rem] border-2
-border-dashed border-indigo-200&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;w-20 h-20 bg-indigo-600 rounded-full flex items-center justify-center
-mx-auto mb-6 shadow-xl&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;svg
-class=&quot;w-10 h-10 text-white&quot; fill=&quot;none&quot;
-stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;&gt;&lt;path
-stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;
-stroke-width=&quot;2&quot; d=&quot;M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118
-0z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;h2
-class=&quot;text-2xl font-black uppercase
-text-indigo-900&quot;&gt;Finalizar&lt;/h2&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;p
-class=&quot;text-slate-500 text-sm mt-2 mb-8&quot;&gt;Revisa que toda la
-información esté completa. Al generar el informe se bloqueará la edición para
-mantener la integridad del diagnóstico.&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;button
-type=&quot;button&quot; onclick=&quot;generarInformeIndividual()&quot;
-class=&quot;w-full bg-indigo-600 text-white p-5 rounded-2xl font-black
-uppercase tracking-widest shadow-2xl hover:bg-indigo-700 transition transform
-hover:-translate-y-1&quot;&gt;Generar informe final&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;!-- Navegación --&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div class=&quot;mt-12
-flex justify-between items-center border-t pt-8&quot;
-id=&quot;nav-container&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;button
-type=&quot;button&quot; id=&quot;prevBtn&quot; class=&quot;px-6 py-3 text-xs
-font-black text-slate-400 uppercase tracking-widest hover:text-indigo-600
-transition&quot; onclick=&quot;changeStep(-1)&quot;&gt;Atrás&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;button
-type=&quot;button&quot; id=&quot;nextBtn&quot; class=&quot;bg-indigo-600
-text-white px-12 py-4 rounded-2xl text-xs font-black uppercase tracking-widest
-hover:bg-indigo-700 shadow-xl transition&quot; onclick=&quot;changeStep(1)&quot;&gt;Continuar&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;/form&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;!-- REPORTE INDIVIDUAL --&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;div id=&quot;reporte-final&quot;
-class=&quot;max-w-5xl mx-auto shadow-none&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        &lt;div class=&quot;no-print flex
-justify-between items-center mb-8 bg-white p-6 rounded-2xl shadow-lg border
-border-indigo-100&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div class=&quot;flex
-items-center gap-3&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;span class=&quot;w-3
-h-3 bg-green-500 rounded-full animate-pulse&quot;&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;p class=&quot;text-xs
-font-bold text-slate-500 uppercase tracking-widest&quot;&gt;Informe individual
-- Vista previa&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div class=&quot;flex
-gap-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;button
-onclick=&quot;volverAlFormulario()&quot; class=&quot;px-6 py-3 border-2
-border-slate-200 rounded-xl text-[10px] font-black uppercase hover:bg-slate-50
-transition&quot;&gt;Editar / Volver&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;button
-onclick=&quot;dispararImpresionIndividual()&quot; class=&quot;px-8 py-3
-bg-indigo-600 text-white rounded-xl text-[10px] font-black uppercase
-tracking-widest shadow-lg hover:bg-indigo-700 transition&quot;&gt;Imprimir /
-Guardar PDF&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        &lt;div class=&quot;report-content
-bg-white p-12 border-4 border-slate-900 relative&quot;
-id=&quot;reporte-impresion-individual&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;!-- Cabecera UNAH --&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div style=&quot;display:
-flex; justify-content: space-between; border-bottom: 5px solid #000;
-padding-bottom: 20px; margin-bottom: 30px;&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div style=&quot;width:
-80px;&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot;
-fill=&quot;none&quot;&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot;
-r=&quot;45&quot; stroke=&quot;black&quot;
-stroke-width=&quot;2&quot;/&gt;&lt;path d=&quot;M30 40 L50 20 L70 40 M50 20 V80
-M30 60 H70&quot; stroke=&quot;black&quot;
-stroke-width=&quot;5&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div style=&quot;flex:1;
-text-align:center;&quot;&gt;&lt;h1 style=&quot;font-size:16pt;
-font-weight:900;&quot;&gt;Universidad Nacional Autónoma de
-Honduras&lt;/h1&gt;&lt;h2 style=&quot;font-size:12pt;&quot;&gt;Facultad de
-Humanidades y Artes&lt;/h2&gt;&lt;h3
-style=&quot;font-size:10pt;&quot;&gt;Departamento de Pedagogía&lt;/h3&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div
-style=&quot;width:80px; text-align:right;
-font-size:8pt;&quot;&gt;OE-II&lt;br&gt;2026&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div
-class=&quot;print-section&quot;&gt;&lt;h4 style=&quot;background:#000;
-color:#fff; padding:5px;&quot;&gt;I. Identificación&lt;/h4&gt;&lt;table
-style=&quot;width:100%; margin-top:15px;&quot;
-id=&quot;r-individual-ident&quot;&gt;&lt;/table&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div
-class=&quot;print-section&quot;&gt;&lt;h4 style=&quot;background:#000;
-color:#fff; padding:5px;&quot;&gt;II. Síntesis de entrevista&lt;/h4&gt;&lt;div
-id=&quot;r-individual-entrevista&quot;&gt;&lt;/div&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div
-class=&quot;print-section&quot;&gt;&lt;h4 style=&quot;background:#000; color:#fff;
-padding:5px;&quot;&gt;III. Análisis de influencias&lt;/h4&gt;&lt;div
-style=&quot;display:flex; gap:30px;&quot;&gt;&lt;div
-style=&quot;width:250px;&quot;&gt;&lt;canvas
-id=&quot;r-individual-chart&quot;&gt;&lt;/canvas&gt;&lt;/div&gt;&lt;div style=&quot;flex:1;
-border:2px solid #000; padding:15px; text-align:center;&quot;&gt;&lt;span
-style=&quot;font-size:8pt;&quot;&gt;ÍNDICE DE
-AUTODETERMINACIÓN&lt;/span&gt;&lt;div id=&quot;r-individual-score&quot;
-style=&quot;font-size:40pt;&quot;&gt;0%&lt;/div&gt;&lt;div
-id=&quot;r-individual-label&quot;
-style=&quot;background:#000;color:#fff;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div
-id=&quot;r-individual-influencias-detalle&quot;&gt;&lt;/div&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div
-class=&quot;print-section&quot;&gt;&lt;h4 style=&quot;background:#000;
-color:#fff; padding:5px;&quot;&gt;IV. Plan SMART&lt;/h4&gt;&lt;table
-style=&quot;width:100%; border-collapse:collapse;&quot;
-id=&quot;r-individual-smart&quot;&gt;&lt;/table&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div
-class=&quot;print-section&quot;&gt;&lt;h4 style=&quot;background:#000;
-color:#fff; padding:5px;&quot;&gt;V. Sesiones&lt;/h4&gt;&lt;div
-id=&quot;r-individual-sesiones&quot; style=&quot;display:grid;
-grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
-gap:15px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div
-class=&quot;print-section&quot;&gt;&lt;h4 style=&quot;background:#000; color:#fff;
-padding:5px;&quot;&gt;VI. Diagnóstico&lt;/h4&gt;&lt;p
-id=&quot;r-individual-diag&quot;&gt;&lt;/p&gt;&lt;div
-id=&quot;r-individual-recomendaciones&quot;&gt;&lt;/div&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div
-style=&quot;margin-top:100px; display:flex;
-justify-content:space-around;&quot;&gt;&lt;div style=&quot;width:200px;
-border-top:2px solid #000; padding-top:10px;&quot;&gt;Firma del
-estudiante&lt;/div&gt;&lt;div style=&quot;width:200px; border-top:2px solid
-#000; padding-top:10px;&quot;&gt;Firma del orientador&lt;/div&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;!-- REPORTE GENERAL --&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;div id=&quot;reporte-general&quot;
-class=&quot;max-w-5xl mx-auto shadow-none&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        &lt;div class=&quot;no-print flex
-justify-between items-center mb-8 bg-white p-6 rounded-2xl shadow-lg border
-border-indigo-100&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div class=&quot;flex
-items-center gap-3&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;span class=&quot;w-3
-h-3 bg-blue-500 rounded-full animate-pulse&quot;&gt;&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;p class=&quot;text-xs
-font-bold text-slate-500 uppercase tracking-widest&quot;&gt;Reporte General del
-Equipo&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div class=&quot;flex
-gap-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;button
-onclick=&quot;volverAlListadoDesdeGeneral()&quot; class=&quot;px-6 py-3
-border-2 border-slate-200 rounded-xl text-[10px] font-black uppercase
-hover:bg-slate-50 transition&quot;&gt;Volver al listado&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;button
-onclick=&quot;window.print()&quot; class=&quot;px-8 py-3 bg-indigo-600
-text-white rounded-xl text-[10px] font-black uppercase tracking-widest
-shadow-lg hover:bg-indigo-700 transition&quot;&gt;Imprimir
-reporte&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        &lt;div class=&quot;report-content
-bg-white p-12 border-4 border-slate-900 relative&quot; id=&quot;reporte-general-contenido&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div style=&quot;display:
-flex; justify-content: space-between; border-bottom: 5px solid #000;
-padding-bottom: 20px; margin-bottom: 30px;&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div style=&quot;width:
-80px;&quot;&gt;&lt;svg viewBox=&quot;0 0 100 100&quot;
-fill=&quot;none&quot;&gt;&lt;circle cx=&quot;50&quot; cy=&quot;50&quot;
-r=&quot;45&quot; stroke=&quot;black&quot;
-stroke-width=&quot;2&quot;/&gt;&lt;path d=&quot;M30 40 L50 20 L70 40 M50 20 V80
-M30 60 H70&quot; stroke=&quot;black&quot;
-stroke-width=&quot;5&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div style=&quot;flex:1;
-text-align:center;&quot;&gt;&lt;h1 style=&quot;font-size:16pt;
-font-weight:900;&quot;&gt;Universidad Nacional Autónoma de
-Honduras&lt;/h1&gt;&lt;h2 style=&quot;font-size:12pt;&quot;&gt;Facultad de
-Humanidades y Artes&lt;/h2&gt;&lt;h3
-style=&quot;font-size:10pt;&quot;&gt;Departamento de
-Pedagogía&lt;/h3&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div
-style=&quot;width:80px; text-align:right; font-size:8pt;&quot;&gt;Reporte
-General&lt;br&gt;2026&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;h2 class=&quot;text-xl
-font-black uppercase mb-6&quot;&gt;Estadísticas del grupo&lt;/h2&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div
-id=&quot;general-stats&quot; class=&quot;grid grid-cols-2 md:grid-cols-4 gap-4
-mb-8&quot;&gt;&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div
-class=&quot;mb-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;h3 class=&quot;text-lg
-font-bold mb-2&quot;&gt;Distribución por nivel de autodeterminación&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;canvas
-id=&quot;general-chart-pie&quot; width=&quot;300&quot; height=&quot;300&quot;
-style=&quot;max-width:400px;&quot;&gt;&lt;/canvas&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div
-class=&quot;mb-8&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;h3 class=&quot;text-lg
-font-bold mb-2&quot;&gt;Promedio de influencias&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;canvas
-id=&quot;general-chart-bar&quot; width=&quot;400&quot;
-height=&quot;250&quot;&gt;&lt;/canvas&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;h3 class=&quot;text-lg
-font-bold mb-2&quot;&gt;Listado de estudiantes e índices&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;table
-class=&quot;w-full border-collapse border border-slate-300&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;thead&gt;&lt;tr
-class=&quot;bg-slate-100&quot;&gt;&lt;th class=&quot;border
-p-2&quot;&gt;Nombre&lt;/th&gt;&lt;th class=&quot;border p-2&quot;&gt;Índice de
-autodeterminación&lt;/th&gt;&lt;th class=&quot;border
-p-2&quot;&gt;Nivel&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;tbody
-id=&quot;general-tabla&quot;&gt;&lt;/tbody&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;/table&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;script&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // </span><span lang=ES-MX
-style='font-family:"Segoe UI Emoji",sans-serif'>&#128293;</span><span
-lang=ES-MX> CONFIGURACIÓN DE FIREBASE (TUS CREDENCIALES) </span><span
-lang=ES-MX style='font-family:"Segoe UI Emoji",sans-serif'>&#128293;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        const firebaseConfig = {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            apiKey:
-&quot;AIzaSyBXJXjsftrIyQKjgFgY5yjFrRJToYFHd4U&quot;,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            authDomain:
-&quot;orientacion-unah.firebaseapp.com&quot;,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            projectId:
-&quot;orientacion-unah&quot;,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            storageBucket:
-&quot;orientacion-unah.firebasestorage.app&quot;,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            messagingSenderId:
-&quot;5638188709&quot;,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            appId:
-&quot;1:5638188709:web:dfc0c1eb5aca2cb04b274c&quot;,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            measurementId:
-&quot;G-J9MZ8VEZPH&quot;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        };</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        firebase.initializeApp(firebaseConfig);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        const db = firebase.firestore();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // Colección en Firestore</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        const COLLECTION_NAME =
-&quot;estudiantes&quot;;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- VARIABLES GLOBALES
-----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        let currentUserId = null;          //
-ID del documento en Firestore</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        let currentUserData = null;        
-// Datos del usuario actual (para edición)</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        let currentStep = 1;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        let chartIndividual = null;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        let chartPie = null, chartBar =
-null;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // Metas y sesiones (arrays
-temporales)</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        let metas = [];</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        let sesiones = [];</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- FUNCIONES DE
-FIRESTORE ----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        async function
-cargarListadoDesdeFirestore() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const snapshot = await
-db.collection(COLLECTION_NAME).get();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const usuarios = [];</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            snapshot.forEach(doc =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                usuarios.push({ id: doc.id,
-...doc.data() });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            renderizarListado(usuarios);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        async function guardarEstudiante(id,
-data) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (id) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                await
-db.collection(COLLECTION_NAME).doc(id).update(data);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            } else {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                const docRef = await
-db.collection(COLLECTION_NAME).add(data);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                return docRef.id;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        async function
-eliminarEstudiante(id) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            await
-db.collection(COLLECTION_NAME).doc(id).delete();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        async function
-obtenerEstudiante(id) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const doc = await
-db.collection(COLLECTION_NAME).doc(id).get();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            return doc.exists ? { id:
-doc.id, ...doc.data() } : null;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- RENDERIZAR LISTADO
-----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function
-renderizarListado(usuarios) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const container =
-document.getElementById('user-cards');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (!container) return;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            container.innerHTML = '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (usuarios.length === 0) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                container.innerHTML =
-'&lt;p class=&quot;text-slate-500 col-span-3 text-center py-10&quot;&gt;No hay
-estudiantes registrados. Crea uno nuevo.&lt;/p&gt;';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                return;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            usuarios.forEach(user =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                const indice =
-calcularIndiceAutodeterminacion(user);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                const nivel =
-obtenerNivel(indice);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                const card = document.createElement('div');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                card.className =
-'bg-indigo-50 p-6 rounded-2xl border-2 border-indigo-100 hover:shadow-xl
-transition';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                card.innerHTML = `</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;h3
-class=&quot;text-lg font-black text-indigo-900 mb-2&quot;&gt;${user.entrevistado
-|| 'Sin nombre'}&lt;/h3&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;p
-class=&quot;text-xs text-slate-600 mb-1&quot;&gt;Índice: ${indice}%&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;p
-class=&quot;text-xs font-bold ${nivel.clase}
-mb-4&quot;&gt;${nivel.texto}&lt;/p&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-class=&quot;flex justify-end gap-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;button
-onclick=&quot;seleccionarUsuario('${user.id}')&quot; class=&quot;bg-indigo-600
-text-white px-4 py-2 rounded-xl text-xs font-bold uppercase hover:bg-indigo-700
-transition&quot;&gt;Abrir ficha&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;button onclick=&quot;eliminarUsuario('${user.id}')&quot;
-class=&quot;bg-red-500 text-white px-4 py-2 rounded-xl text-xs font-bold
-uppercase hover:bg-red-600 transition&quot;&gt;Eliminar&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                `;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>               
-container.appendChild(card);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- CREAR NUEVO
-ESTUDIANTE ----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        async function
-crearNuevoEstudiante() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const nombre = prompt('Nombre
-completo del estudiante:', 'Nuevo estudiante');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (!nombre) return;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const nuevo = {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                entrevistado: nombre,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                entrevistador: '',</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                fecha: '',</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                edad: '',</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                preg1: '', preg2: '',
-preg3: '', preg4: '', preg5: '',</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                infFam: 3, infFamCom: '',</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                infSoc: 3, infSocCom: '',</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                infEdu: 3, infEduCom: '',</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                infClaridad: 3,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                metas: [],</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                sesiones: []</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            };</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const id = await
-guardarEstudiante(null, nuevo);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            cargarListadoDesdeFirestore();
-// refrescar</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            // Opcional: abrir directamente</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            seleccionarUsuario(id);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- SELECCIONAR USUARIO
-----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        async function
-seleccionarUsuario(userId) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const usuario = await
-obtenerEstudiante(userId);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (!usuario) return;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            currentUserId = userId;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            currentUserData = usuario;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('current-user-name-display').innerText =
-usuario.entrevistado || 'Sin nombre';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            metas = usuario.metas || [];</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            sesiones = usuario.sesiones ||
-[];</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            // Cargar datos en el formulario</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('entrevistado').value = usuario.entrevistado || '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('entrevistador').value = usuario.entrevistador || '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('fecha').value = usuario.fecha || '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('edad').value = usuario.edad || '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('preg1').value = usuario.preg1 || '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('preg2').value = usuario.preg2 || '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            document.getElementById('preg3').value
-= usuario.preg3 || '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('preg4').value = usuario.preg4 || '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('preg5').value = usuario.preg5 || '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('inf-fam').value = usuario.infFam || 3;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('inf-fam-com').value = usuario.infFamCom || '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('inf-soc').value = usuario.infSoc || 3;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('inf-soc-com').value = usuario.infSocCom || '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('inf-edu').value = usuario.infEdu || 3;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('inf-edu-com').value = usuario.infEduCom || '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('inf-claridad').value = usuario.infClaridad || 3;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            renderizarMetas();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            renderizarSesiones();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('user-list-container').classList.add('hidden');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('app-container').classList.remove('hidden');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('reporte-final').classList.remove('visible-report');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            currentStep = 1;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.querySelectorAll('.step-content').forEach(el =&gt;
-el.classList.remove('active'));</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            document.getElementById('step1').classList.add('active');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('stepCounter').innerText = 'ETAPA 1/6';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('nextBtn').style.display = 'inline-block';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- GUARDAR DATOS
-ACTUALES EN FIRESTORE ----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        async function
-guardarDatosActuales() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (!currentUserId) return;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const datos = {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                entrevistado:
-document.getElementById('entrevistado').value,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                entrevistador:
-document.getElementById('entrevistador').value,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                fecha:
-document.getElementById('fecha').value,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                edad:
-document.getElementById('edad').value,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                preg1:
-document.getElementById('preg1').value,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                preg2:
-document.getElementById('preg2').value,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                preg3:
-document.getElementById('preg3').value,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                preg4:
-document.getElementById('preg4').value,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                preg5:
-document.getElementById('preg5').value,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                infFam:
-parseInt(document.getElementById('inf-fam').value) || 3,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                infFamCom:
-document.getElementById('inf-fam-com').value,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                infSoc:
-parseInt(document.getElementById('inf-soc').value) || 3,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                infSocCom:
-document.getElementById('inf-soc-com').value,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                infEdu:
-parseInt(document.getElementById('inf-edu').value) || 3,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                infEduCom:
-document.getElementById('inf-edu-com').value,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                infClaridad: parseInt(document.getElementById('inf-claridad').value)
-|| 3,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                metas: metas,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                sesiones: sesiones</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            };</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            await
-guardarEstudiante(currentUserId, datos);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            currentUserData = datos; //
-actualizar referencia</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- AUTO-GUARDADO
-----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function configurarAutoGuardado() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const inputs =
-document.querySelectorAll('#mainForm input, #mainForm textarea, #mainForm
-select');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            inputs.forEach(input =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>               
-input.removeEventListener('input', guardarDatosActuales);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>               
-input.addEventListener('input', guardarDatosActuales);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- METAS ----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function renderizarMetas() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const container =
-document.getElementById('smartContainer');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (!container) return;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            container.innerHTML = '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            metas.forEach((meta, index)
-=&gt; {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                const div = document.createElement('div');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                div.className = 'p-6
-border-2 border-slate-100 rounded-3xl bg-white relative';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                div.innerHTML = `</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;button
-type=&quot;button&quot; onclick=&quot;eliminarMeta(${index})&quot;
-class=&quot;absolute top-2 right-2 text-red-400 hover:text-red-600
-text-xl&quot;&gt;&amp;times;&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-class=&quot;grid grid-cols-1 md:grid-cols-2 gap-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;col-span-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;label
-class=&quot;text-[10px] font-black text-indigo-400
-uppercase&quot;&gt;Objetivo&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;text&quot; value=&quot;${(meta.objetivo || '').replace(/&quot;/g,
-'&amp;quot;')}&quot; onchange=&quot;actualizarMeta(${index}, 'objetivo',
-this.value)&quot; class=&quot;w-full p-3 border rounded-xl bg-slate-50&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;label
-class=&quot;text-[10px] font-black text-indigo-400 uppercase&quot;&gt;Plazo
-(fecha)&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;date&quot; value=&quot;${meta.plazo || ''}&quot;
-onchange=&quot;actualizarMeta(${index}, 'plazo', this.value)&quot;
-class=&quot;w-full p-3 border rounded-xl bg-slate-50&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;label
-class=&quot;text-[10px] font-black text-indigo-400
-uppercase&quot;&gt;Estrategia&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;text&quot; value=&quot;${meta.estrategia || ''}&quot;
-onchange=&quot;actualizarMeta(${index}, 'estrategia', this.value)&quot;
-class=&quot;w-full p-3 border rounded-xl bg-slate-50&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;col-span-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;label
-class=&quot;text-[10px] font-black text-indigo-400 uppercase&quot;&gt;Recursos
-necesarios&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;text&quot; value=&quot;${meta.recursos || ''}&quot; onchange=&quot;actualizarMeta(${index},
-'recursos', this.value)&quot; class=&quot;w-full p-3 border rounded-xl
-bg-slate-50&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                `;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                container.appendChild(div);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function agregarMeta() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            metas.push({ objetivo: '',
-plazo: '', estrategia: '', recursos: '' });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            renderizarMetas();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            guardarDatosActuales();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function actualizarMeta(index,
-campo, valor) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            metas[index][campo] = valor;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            guardarDatosActuales();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function eliminarMeta(index) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            metas.splice(index, 1);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            renderizarMetas();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            guardarDatosActuales();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- SESIONES ----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function renderizarSesiones() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const container =
-document.getElementById('sesionesContainer');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (!container) return;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            container.innerHTML = '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            sesiones.forEach((sesion,
-index) =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                const div =
-document.createElement('div');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                div.className = 'p-5
-border-2 border-slate-100 rounded-3xl bg-white relative sesion-item';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                div.innerHTML = `</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;button
-type=&quot;button&quot; onclick=&quot;eliminarSesion(${index})&quot;
-class=&quot;absolute top-2 right-2 text-red-400 hover:text-red-600
-text-xl&quot;&gt;&amp;times;&lt;/button&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-class=&quot;grid grid-cols-1 md:grid-cols-3 gap-4&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;label
-class=&quot;text-[10px] font-black text-indigo-400
-uppercase&quot;&gt;Fecha&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;date&quot; value=&quot;${sesion.fecha || ''}&quot;
-onchange=&quot;actualizarSesion(${index}, 'fecha', this.value)&quot; class=&quot;w-full
-p-3 border rounded-xl bg-slate-50&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;md:col-span-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;label
-class=&quot;text-[10px] font-black text-indigo-400 uppercase&quot;&gt;Objetivo
-de la sesión&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;text&quot; value=&quot;${sesion.objetivo || ''}&quot;
-onchange=&quot;actualizarSesion(${index}, 'objetivo', this.value)&quot;
-class=&quot;w-full p-3 border rounded-xl bg-slate-50&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;md:col-span-3&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;label
-class=&quot;text-[10px] font-black text-indigo-400
-uppercase&quot;&gt;Observaciones / acuerdos&lt;/label&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;textarea
-rows=&quot;2&quot; onchange=&quot;actualizarSesion(${index}, 'observaciones',
-this.value)&quot; class=&quot;w-full p-3 border rounded-xl
-bg-slate-50&quot;&gt;${sesion.observaciones || ''}&lt;/textarea&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;div
-class=&quot;md:col-span-3 flex items-center gap-2&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;input
-type=&quot;checkbox&quot; ${sesion.entrevista ? 'checked' : ''}
-onchange=&quot;actualizarSesion(${index}, 'entrevista', this.checked)&quot;
-class=&quot;w-4 h-4 accent-indigo-600&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                            &lt;span
-class=&quot;text-xs&quot;&gt;En esta sesión se aplicó la entrevista de autodescubrimiento&lt;/span&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                `;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                container.appendChild(div);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function agregarSesion() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            sesiones.push({ fecha: '',
-objetivo: '', observaciones: '', entrevista: false });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            renderizarSesiones();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            guardarDatosActuales();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function actualizarSesion(index,
-campo, valor) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            sesiones[index][campo] = valor;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            guardarDatosActuales();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function eliminarSesion(index) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            sesiones.splice(index, 1);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            renderizarSesiones();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            guardarDatosActuales();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- NAVEGACIÓN ----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function changeStep(n) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (currentStep + n &lt; 1 ||
-currentStep + n &gt; 6) return;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            currentStep += n;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.querySelectorAll('.step-content').forEach(el =&gt;
-el.classList.remove('active'));</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById(`step${currentStep}`).classList.add('active');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('stepCounter').innerText = `ETAPA ${currentStep}/6`;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const nextBtn =
-document.getElementById('nextBtn');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (currentStep === 6) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                nextBtn.style.display =
-'none';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            } else {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                nextBtn.style.display =
-'inline-block';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            window.scrollTo({ top: 0,
-behavior: 'smooth' });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            guardarDatosActuales();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- VOLVER AL LISTADO
-----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        async function volverAlListado() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            await guardarDatosActuales();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            currentUserId = null;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            currentUserData = null;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            document.getElementById('app-container').classList.add('hidden');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('user-list-container').classList.remove('hidden');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('reporte-final').classList.remove('visible-report');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            cargarListadoDesdeFirestore();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- ELIMINAR USUARIO
-----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        async function
-eliminarUsuario(userId) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (confirm('¿Estás seguro de
-eliminar este estudiante? Se perderán todos sus datos.')) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                await eliminarEstudiante(userId);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>               
-cargarListadoDesdeFirestore();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- FUNCIONES DE CÁLCULO
-----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function
-calcularIndiceAutodeterminacion(d) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const infFam = d.infFam || 3;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const infSoc = d.infSoc || 3;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const infEdu = d.infEdu || 3;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const claridad = d.infClaridad
-|| 3;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const pesoFam = (6 - infFam) *
-2;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const pesoSoc = (6 - infSoc) *
-2;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const pesoEdu = (6 - infEdu) *
-2;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const pesoClar = claridad * 4;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            let score =
-Math.round(((pesoFam + pesoSoc + pesoEdu + pesoClar) / 44) * 100);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            return Math.min(100,
-Math.max(0, score));</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function obtenerNivel(score) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (score &gt;= 75) return {
-texto: 'ALTA AUTODETERMINACIÓN', clase: 'text-green-600', diagnostico: 'El
-estudiante muestra una clara percepción de su propósito y baja interferencia de
-influencias externas.', recomendacion: 'Potenciar la autonomía mediante
-proyectos concretos.' };</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (score &gt;= 50) return {
-texto: 'AUTODETERMINACIÓN MODERADA', clase: 'text-yellow-600', diagnostico:
-'Existe claridad pero las influencias externas generan dudas.', recomendacion:
-'Trabajar en diferenciación entre deseos propios y ajenos.' };</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            return { texto: 'BAJA
-AUTODETERMINACIÓN', clase: 'text-red-600', diagnostico: 'Predominan influencias
-externas y baja claridad.', recomendacion: 'Priorizar autoconocimiento y
-análisis de creencias limitantes.' };</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- GENERAR INFORME
-INDIVIDUAL ----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        async function
-generarInformeIndividual() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            await guardarDatosActuales();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (!currentUserData) return;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const d = currentUserData;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('r-individual-ident').innerHTML = `</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>               
-&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Estudiante:&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;${d.entrevistado
-||
-'---'}&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Edad:&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;${d.edad
-|| '---'}&lt;/td&gt;&lt;/tr&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>               
-&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Orientador:&lt;/strong&gt;&lt;/td&gt;&lt;td
-colspan=&quot;3&quot;&gt;${d.entrevistador || '---'}&lt;/td&gt;&lt;/tr&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>               
-&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Fecha inicio:&lt;/strong&gt;&lt;/td&gt;&lt;td
-colspan=&quot;3&quot;&gt;${d.fecha || '---'}&lt;/td&gt;&lt;/tr&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            `;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const preguntas = [d.preg1,
-d.preg2, d.preg3, d.preg4, d.preg5];</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            let entrevistaHTML = '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (preguntas.some(p =&gt; p))
-{</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                entrevistaHTML = '&lt;ul
-style=&quot;list-style:disc; padding-left:20px;&quot;&gt;' + </span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    preguntas.map((p,i)
-=&gt; p ? `&lt;li&gt;&lt;strong&gt;Pregunta ${i+1}:&lt;/strong&gt;
-${p}&lt;/li&gt;` : '').join('') + '&lt;/ul&gt;';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            } else {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                entrevistaHTML =
-'&lt;p&gt;No se registraron respuestas.&lt;/p&gt;';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('r-individual-entrevista').innerHTML = entrevistaHTML;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const valores = [d.infFam,
-d.infSoc, d.infEdu, d.infClaridad];</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const ctx =
-document.getElementById('r-individual-chart').getContext('2d');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (chartIndividual)
-chartIndividual.destroy();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            chartIndividual = new
-Chart(ctx, {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                type: 'radar',</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                data: {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    labels: ['Influencia
-familiar', 'Influencia social', 'Influencia educativa', 'Claridad'],</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    datasets: [{</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        data: valores,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        backgroundColor:
-'rgba(0,0,0,0.05)',</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        borderColor:
-'#000',</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        borderWidth: 2,</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                       
-pointBackgroundColor: '#000',</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        pointRadius: 4</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    }]</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                },</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                options: { scales: { r: {
-min: 1, max: 5, ticks: { stepSize: 1 } } }, plugins: { legend: { display: false
-} } }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const indice = calcularIndiceAutodeterminacion(d);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('r-individual-score').innerText = indice + '%';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const nivel =
-obtenerNivel(indice);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('r-individual-label').innerText = nivel.texto;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            document.getElementById('r-individual-diag').innerText
-= nivel.diagnostico;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('r-individual-recomendaciones').innerText =
-nivel.recomendacion;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            let detalle = '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (d.infFamCom) detalle +=
-`&lt;p&gt;&lt;strong&gt;Familia:&lt;/strong&gt; ${d.infFamCom}&lt;/p&gt;`;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (d.infSocCom) detalle +=
-`&lt;p&gt;&lt;strong&gt;Amigos:&lt;/strong&gt; ${d.infSocCom}&lt;/p&gt;`;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (d.infEduCom) detalle +=
-`&lt;p&gt;&lt;strong&gt;Educación:&lt;/strong&gt; ${d.infEduCom}&lt;/p&gt;`;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            document.getElementById('r-individual-influencias-detalle').innerHTML
-= detalle || '&lt;p&gt;Sin comentarios.&lt;/p&gt;';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            let smartHTML = '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            (d.metas || []).forEach(m =&gt;
-{</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                if (m.objetivo) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    smartHTML +=
-`&lt;tr&gt;&lt;td style=&quot;border:1px solid #000;
-padding:8px;&quot;&gt;${m.objetivo}&lt;/td&gt;&lt;td style=&quot;border:1px
-solid #000; padding:8px;&quot;&gt;${m.plazo || '—'}&lt;/td&gt;&lt;td
-style=&quot;border:1px solid #000; padding:8px;&quot;&gt;${m.estrategia ||
-'—'}&lt;/td&gt;&lt;td style=&quot;border:1px solid #000;
-padding:8px;&quot;&gt;${m.recursos || '—'}&lt;/td&gt;&lt;/tr&gt;`;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (!smartHTML) smartHTML =
-'&lt;tr&gt;&lt;td colspan=&quot;4&quot;
-style=&quot;text-align:center;&quot;&gt;No hay metas
-SMART.&lt;/td&gt;&lt;/tr&gt;';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('r-individual-smart').innerHTML = smartHTML;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            let sesionesHTML = '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            (d.sesiones || []).forEach((s,
-idx) =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                sesionesHTML += `</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;div
-style=&quot;border:1px solid #000; padding:10px; border-radius:8px;&quot;&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                       
-&lt;strong&gt;Sesión ${idx+1}&lt;/strong&gt; ${s.fecha ? ' - ' + s.fecha :
-''}&lt;br&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                       
-&lt;em&gt;Objetivo:&lt;/em&gt; ${s.objetivo || 'No especificado'}&lt;br&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        &lt;em&gt;Observaciones:&lt;/em&gt;
-${s.observaciones || '—'}&lt;br&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        ${s.entrevista ?
-'&lt;span style=&quot;background:#000; color:#fff; padding:2px
-5px;&quot;&gt;Entrevista aplicada&lt;/span&gt;' : ''}</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    &lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                `;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (!sesionesHTML) sesionesHTML
-= '&lt;p&gt;No hay sesiones registradas.&lt;/p&gt;';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('r-individual-sesiones').innerHTML = sesionesHTML;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('app-container').classList.add('hidden');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            document.getElementById('reporte-final').classList.add('visible-report');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function volverAlFormulario() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('reporte-final').classList.remove('visible-report');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('app-container').classList.remove('hidden');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function
-dispararImpresionIndividual() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            window.print();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- REPORTE GENERAL
-----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        async function
-mostrarReporteGeneral() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('user-list-container').classList.add('hidden');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('reporte-general').classList.add('visible-report');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            await
-renderizarReporteGeneral();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        async function renderizarReporteGeneral()
-{</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const snapshot = await
-db.collection(COLLECTION_NAME).get();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const usuarios = [];</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            snapshot.forEach(doc =&gt;
-usuarios.push({ id: doc.id, ...doc.data() }));</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (usuarios.length === 0) {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>               
-document.getElementById('general-stats').innerHTML = '&lt;p
-class=&quot;col-span-4 text-center&quot;&gt;No hay estudiantes
-registrados.&lt;/p&gt;';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                return;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const total = usuarios.length;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            let sumIndice = 0, sumFam = 0,
-sumSoc = 0, sumEdu = 0, sumClar = 0;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const niveles = { alta: 0,
-moderada: 0, baja: 0 };</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            usuarios.forEach(u =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                const indice =
-calcularIndiceAutodeterminacion(u);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                sumIndice += indice;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                sumFam += u.infFam || 3;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                sumSoc += u.infSoc || 3;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                sumEdu += u.infEdu || 3;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                sumClar += u.infClaridad ||
-3;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                if (indice &gt;= 75)
-niveles.alta++;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                else if (indice &gt;= 50)
-niveles.moderada++;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                else niveles.baja++;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const promIndice =
-Math.round(sumIndice / total);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const promFam = (sumFam /
-total).toFixed(1);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const promSoc = (sumSoc /
-total).toFixed(1);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const promEdu = (sumEdu /
-total).toFixed(1);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const promClar = (sumClar /
-total).toFixed(1);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('general-stats').innerHTML = `</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div
-class=&quot;bg-indigo-50 p-4 rounded-xl text-center&quot;&gt;&lt;span
-class=&quot;text-3xl
-font-black&quot;&gt;${total}&lt;/span&gt;&lt;br&gt;Estudiantes&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div
-class=&quot;bg-indigo-50 p-4 rounded-xl text-center&quot;&gt;&lt;span
-class=&quot;text-3xl
-font-black&quot;&gt;${promIndice}%&lt;/span&gt;&lt;br&gt;Índice
-promedio&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div
-class=&quot;bg-indigo-50 p-4 rounded-xl text-center&quot;&gt;&lt;span
-class=&quot;text-3xl
-font-black&quot;&gt;${promClar}&lt;/span&gt;&lt;br&gt;Claridad
-promedio&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                &lt;div
-class=&quot;bg-indigo-50 p-4 rounded-xl text-center&quot;&gt;&lt;span
-class=&quot;text-3xl
-font-black&quot;&gt;${niveles.alta}&lt;/span&gt;&lt;br&gt;Alta autodeterminación&lt;/div&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            `;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const ctxPie =
-document.getElementById('general-chart-pie').getContext('2d');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (chartPie)
-chartPie.destroy();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            chartPie = new Chart(ctxPie, {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                type: 'pie',</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                data: {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    labels: ['Alta',
-'Moderada', 'Baja'],</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    datasets: [{</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        data:
-[niveles.alta, niveles.moderada, niveles.baja],</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        backgroundColor:
-['#22c55e', '#eab308', '#ef4444']</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    }]</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            const ctxBar =
-document.getElementById('general-chart-bar').getContext('2d');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            if (chartBar)
-chartBar.destroy();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            chartBar = new Chart(ctxBar, {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                type: 'bar',</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                data: {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    labels: ['Influencia
-familiar', 'Influencia social', 'Influencia educativa', 'Claridad'],</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    datasets: [{</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        data: [promFam,
-promSoc, promEdu, promClar],</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                        backgroundColor:
-'#4f46e5'</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                    }]</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                },</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                options: { scales: { y: {
-min: 1, max: 5, stepSize: 1 } }, plugins: { legend: { display: false } } }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            let filas = '';</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            usuarios.forEach(u =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                const indice =
-calcularIndiceAutodeterminacion(u);</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                const nivel =
-obtenerNivel(indice).texto;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>                filas += `&lt;tr&gt;&lt;td
-class=&quot;border p-2&quot;&gt;${u.entrevistado || 'Sin
-nombre'}&lt;/td&gt;&lt;td class=&quot;border
-p-2&quot;&gt;${indice}%&lt;/td&gt;&lt;td class=&quot;border
-p-2&quot;&gt;${nivel}&lt;/td&gt;&lt;/tr&gt;`;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('general-tabla').innerHTML = filas;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        function
-volverAlListadoDesdeGeneral() {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            document.getElementById('reporte-general').classList.remove('visible-report');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>           
-document.getElementById('user-list-container').classList.remove('hidden');</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            cargarListadoDesdeFirestore();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        }</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // ---------- INICIALIZACIÓN
-----------</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>       
-document.addEventListener('DOMContentLoaded', () =&gt; {</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            cargarListadoDesdeFirestore();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>            configurarAutoGuardado();</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        });</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&nbsp;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        // Exponer funciones globalmente</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.crearNuevoEstudiante =
-crearNuevoEstudiante;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.seleccionarUsuario =
-seleccionarUsuario;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.eliminarUsuario =
-eliminarUsuario;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.volverAlListado =
-volverAlListado;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.changeStep = changeStep;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.agregarMeta = agregarMeta;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.actualizarMeta =
-actualizarMeta;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.eliminarMeta = eliminarMeta;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.agregarSesion =
-agregarSesion;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.actualizarSesion = actualizarSesion;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.eliminarSesion =
-eliminarSesion;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.generarInformeIndividual =
-generarInformeIndividual;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.volverAlFormulario =
-volverAlFormulario;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.dispararImpresionIndividual
-= dispararImpresionIndividual;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.mostrarReporteGeneral =
-mostrarReporteGeneral;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>        window.volverAlListadoDesdeGeneral
-= volverAlListadoDesdeGeneral;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>    &lt;/script&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&lt;/body&gt;</span></p>
-
-<p class=MsoNormal><span lang=ES-MX>&lt;/html&gt;</span></p>
-
-</div>
-
+<body class="p-2 md:p-6">
+
+    <!-- LISTADO DE ESTUDIANTES -->
+    <div id="user-list-container" class="max-w-5xl mx-auto">
+        <div class="bg-white shadow-2xl rounded-3xl overflow-hidden border border-slate-200 p-8">
+            <div class="flex justify-between items-center mb-8">
+                <h1 class="text-2xl font-black uppercase text-indigo-900">Estudiantes registrados</h1>
+                <div class="flex gap-4">
+                    <button onclick="mostrarReporteGeneral()" class="bg-indigo-100 text-indigo-700 px-6 py-3 rounded-xl text-xs font-bold uppercase hover:bg-indigo-200 transition">Reporte general</button>
+                    <button onclick="crearNuevoEstudiante()" class="bg-indigo-600 text-white px-6 py-3 rounded-xl text-xs font-bold uppercase hover:bg-indigo-700 transition shadow">+ Nuevo estudiante</button>
+                </div>
+            </div>
+            <div id="user-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Se llena con JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FORMULARIO INDIVIDUAL -->
+    <div class="max-w-5xl mx-auto no-print hidden" id="app-container">
+        <div class="bg-white shadow-2xl rounded-3xl overflow-hidden border border-slate-200">
+            <div class="bg-indigo-900 p-4 text-white flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <button onclick="volverAlListado()" class="bg-indigo-800 hover:bg-indigo-700 px-4 py-2 rounded-lg text-xs font-bold uppercase flex items-center gap-2">
+                        ← Volver al listado
+                    </button>
+                    <div class="h-6 w-px bg-indigo-700"></div>
+                    <div>
+                        <h1 class="text-lg font-black tracking-tighter uppercase">Protocolo de Autodescubrimiento</h1>
+                        <p class="text-indigo-300 text-[8px] font-bold uppercase">Estudiante: <span id="current-user-name-display"></span></p>
+                    </div>
+                </div>
+                <div id="stepCounter" class="bg-indigo-800 px-4 py-2 rounded-full text-[10px] font-bold uppercase border border-indigo-700">
+                    ETAPA 1/6
+                </div>
+            </div>
+
+            <form id="mainForm" class="p-6 md:p-10" onsubmit="return false;">
+                <!-- ETAPA 1: Identificación -->
+                <div id="step1" class="step-content active">
+                    <div class="mb-8 border-b pb-4">
+                        <h2 class="text-2xl font-black uppercase text-indigo-900">01. Datos del Estudiante</h2>
+                        <p class="text-slate-500 text-sm italic">Información básica para el proceso.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest">Nombre completo</label>
+                            <input type="text" id="entrevistado" class="w-full bg-slate-50 border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-indigo-600 outline-none transition" placeholder="Ej. María Pérez">
+                        </div>
+                        <div class="space-y-4">
+                            <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest">Orientador responsable</label>
+                            <input type="text" id="entrevistador" class="w-full bg-slate-50 border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-indigo-600 outline-none transition" placeholder="Tu nombre">
+                        </div>
+                        <div class="space-y-4">
+                            <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest">Fecha de inicio</label>
+                            <input type="date" id="fecha" class="w-full bg-slate-50 border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-indigo-600 outline-none transition">
+                        </div>
+                        <div class="space-y-4">
+                            <label class="block text-[10px] font-black text-slate-400 uppercase tracking-widest">Edad</label>
+                            <input type="number" id="edad" class="w-full bg-slate-50 border-2 border-slate-100 rounded-xl px-4 py-3 focus:border-indigo-600 outline-none transition" placeholder="18">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ETAPA 2: Entrevista inicial -->
+                <div id="step2" class="step-content">
+                    <div class="mb-8 border-b pb-4">
+                        <h2 class="text-2xl font-black uppercase text-indigo-900">02. Entrevista de Diagnóstico</h2>
+                        <p class="text-slate-500 text-sm">Registra las respuestas del estudiante a estas preguntas abiertas.</p>
+                    </div>
+                    <div class="space-y-6">
+                        <div><label class="block text-xs font-bold text-indigo-800 mb-2">1. ¿Qué actividades te hacen perder la noción del tiempo y te generan satisfacción?</label><textarea id="preg1" rows="2" class="w-full p-3 border-2 border-slate-100 rounded-xl focus:border-indigo-600 outline-none"></textarea></div>
+                        <div><label class="block text-xs font-bold text-indigo-800 mb-2">2. ¿Qué críticas o expectativas has recibido de tu familia sobre tu futuro profesional?</label><textarea id="preg2" rows="2" class="w-full p-3 border-2 border-slate-100 rounded-xl focus:border-indigo-600 outline-none"></textarea></div>
+                        <div><label class="block text-xs font-bold text-indigo-800 mb-2">3. Describe un momento en que te sentiste completamente realizado/a.</label><textarea id="preg3" rows="2" class="w-full p-3 border-2 border-slate-100 rounded-xl focus:border-indigo-600 outline-none"></textarea></div>
+                        <div><label class="block text-xs font-bold text-indigo-800 mb-2">4. ¿Qué crees que espera la sociedad de ti en términos de carrera?</label><textarea id="preg4" rows="2" class="w-full p-3 border-2 border-slate-100 rounded-xl focus:border-indigo-600 outline-none"></textarea></div>
+                        <div><label class="block text-xs font-bold text-indigo-800 mb-2">5. Si no hubiera limitaciones, ¿qué te gustaría hacer con tu vida?</label><textarea id="preg5" rows="2" class="w-full p-3 border-2 border-slate-100 rounded-xl focus:border-indigo-600 outline-none"></textarea></div>
+                    </div>
+                </div>
+
+                <!-- ETAPA 3: Influencias -->
+                <div id="step3" class="step-content">
+                    <div class="mb-8 border-b pb-4">
+                        <h2 class="text-2xl font-black uppercase text-indigo-900">03. Influencias Externas</h2>
+                        <p class="text-slate-500 text-sm">Valora el grado de influencia y comenta.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="p-5 border-2 border-slate-100 rounded-3xl bg-white">
+                            <div class="flex items-center gap-2 mb-4"><span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs font-bold">Familia</span></div>
+                            <input type="range" id="inf-fam" min="1" max="5" value="3" class="w-full accent-indigo-600">
+                            <div class="flex justify-between text-[10px] font-bold text-slate-400 mt-1"><span>Baja</span><span>Alta</span></div>
+                            <textarea id="inf-fam-com" placeholder="Comentarios..." rows="2" class="w-full mt-4 p-3 text-sm border rounded-xl bg-slate-50"></textarea>
+                        </div>
+                        <div class="p-5 border-2 border-slate-100 rounded-3xl bg-white">
+                            <div class="flex items-center gap-2 mb-4"><span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs font-bold">Amigos / Grupo social</span></div>
+                            <input type="range" id="inf-soc" min="1" max="5" value="3" class="w-full accent-indigo-600">
+                            <div class="flex justify-between text-[10px] font-bold text-slate-400 mt-1"><span>Baja</span><span>Alta</span></div>
+                            <textarea id="inf-soc-com" placeholder="Comentarios..." rows="2" class="w-full mt-4 p-3 text-sm border rounded-xl bg-slate-50"></textarea>
+                        </div>
+                        <div class="p-5 border-2 border-slate-100 rounded-3xl bg-white">
+                            <div class="flex items-center gap-2 mb-4"><span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs font-bold">Educación / Profesores</span></div>
+                            <input type="range" id="inf-edu" min="1" max="5" value="3" class="w-full accent-indigo-600">
+                            <div class="flex justify-between text-[10px] font-bold text-slate-400 mt-1"><span>Baja</span><span>Alta</span></div>
+                            <textarea id="inf-edu-com" placeholder="Comentarios..." rows="2" class="w-full mt-4 p-3 text-sm border rounded-xl bg-slate-50"></textarea>
+                        </div>
+                        <div class="p-5 border-2 border-slate-100 rounded-3xl bg-white">
+                            <div class="flex items-center gap-2 mb-4"><span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-xs font-bold">Claridad de propósito actual</span></div>
+                            <input type="range" id="inf-claridad" min="1" max="5" value="3" class="w-full accent-indigo-600">
+                            <div class="flex justify-between text-[10px] font-bold text-slate-400 mt-1"><span>Difuso</span><span>Muy claro</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ETAPA 4: SMART -->
+                <div id="step4" class="step-content">
+                    <div class="mb-8 border-b pb-4">
+                        <h2 class="text-2xl font-black uppercase text-indigo-900">04. Metas SMART para el Autodescubrimiento</h2>
+                        <p class="text-slate-500 text-sm">Define objetivos específicos, medibles, alcanzables, relevantes y con plazo.</p>
+                    </div>
+                    <div id="smartContainer" class="space-y-4"></div>
+                    <button type="button" onclick="agregarMeta()" class="mt-4 bg-indigo-100 text-indigo-700 px-6 py-3 rounded-xl text-xs font-bold uppercase hover:bg-indigo-200 transition">+ Añadir otra meta</button>
+                </div>
+
+                <!-- ETAPA 5: Sesiones -->
+                <div id="step5" class="step-content">
+                    <div class="mb-8 border-b pb-4">
+                        <h2 class="text-2xl font-black uppercase text-indigo-900">05. Sesiones de Orientación</h2>
+                        <p class="text-slate-500 text-sm">Registra cada sesión con su objetivo y observaciones.</p>
+                    </div>
+                    <div id="sesionesContainer" class="space-y-4"></div>
+                    <button type="button" onclick="agregarSesion()" class="mt-4 bg-indigo-100 text-indigo-700 px-6 py-3 rounded-xl text-xs font-bold uppercase hover:bg-indigo-200 transition">+ Registrar nueva sesión</button>
+                </div>
+
+                <!-- ETAPA 6: Generar informe -->
+                <div id="step6" class="step-content text-center py-10">
+                    <div class="max-w-md mx-auto bg-indigo-50 p-10 rounded-[3rem] border-2 border-dashed border-indigo-200">
+                        <div class="w-20 h-20 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h2 class="text-2xl font-black uppercase text-indigo-900">Finalizar</h2>
+                        <p class="text-slate-500 text-sm mt-2 mb-8">Revisa que toda la información esté completa. Al generar el informe se bloqueará la edición para mantener la integridad del diagnóstico.</p>
+                        <button type="button" onclick="generarInformeIndividual()" class="w-full bg-indigo-600 text-white p-5 rounded-2xl font-black uppercase tracking-widest shadow-2xl hover:bg-indigo-700 transition transform hover:-translate-y-1">Generar informe final</button>
+                    </div>
+                </div>
+
+                <!-- Navegación -->
+                <div class="mt-12 flex justify-between items-center border-t pt-8" id="nav-container">
+                    <button type="button" id="prevBtn" class="px-6 py-3 text-xs font-black text-slate-400 uppercase tracking-widest hover:text-indigo-600 transition" onclick="changeStep(-1)">Atrás</button>
+                    <button type="button" id="nextBtn" class="bg-indigo-600 text-white px-12 py-4 rounded-2xl text-xs font-black uppercase tracking-widest hover:bg-indigo-700 shadow-xl transition" onclick="changeStep(1)">Continuar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- REPORTE INDIVIDUAL -->
+    <div id="reporte-final" class="max-w-5xl mx-auto shadow-none">
+        <div class="no-print flex justify-between items-center mb-8 bg-white p-6 rounded-2xl shadow-lg border border-indigo-100">
+            <div class="flex items-center gap-3">
+                <span class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
+                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Informe individual - Vista previa</p>
+            </div>
+            <div class="flex gap-4">
+                <button onclick="volverAlFormulario()" class="px-6 py-3 border-2 border-slate-200 rounded-xl text-[10px] font-black uppercase hover:bg-slate-50 transition">Editar / Volver</button>
+                <button onclick="dispararImpresionIndividual()" class="px-8 py-3 bg-indigo-600 text-white rounded-xl text-[10px] font-black uppercase tracking-widest shadow-lg hover:bg-indigo-700 transition">Imprimir / Guardar PDF</button>
+            </div>
+        </div>
+        <div class="report-content bg-white p-12 border-4 border-slate-900 relative" id="reporte-impresion-individual">
+            <!-- Cabecera UNAH -->
+            <div style="display: flex; justify-content: space-between; border-bottom: 5px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
+                <div style="width: 80px;"><svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="45" stroke="black" stroke-width="2"/><path d="M30 40 L50 20 L70 40 M50 20 V80 M30 60 H70" stroke="black" stroke-width="5"/></svg></div>
+                <div style="flex:1; text-align:center;"><h1 style="font-size:16pt; font-weight:900;">Universidad Nacional Autónoma de Honduras</h1><h2 style="font-size:12pt;">Facultad de Humanidades y Artes</h2><h3 style="font-size:10pt;">Departamento de Pedagogía</h3></div>
+                <div style="width:80px; text-align:right; font-size:8pt;">OE-II<br>2026</div>
+            </div>
+            <div class="print-section"><h4 style="background:#000; color:#fff; padding:5px;">I. Identificación</h4><table style="width:100%; margin-top:15px;" id="r-individual-ident"></table></div>
+            <div class="print-section"><h4 style="background:#000; color:#fff; padding:5px;">II. Síntesis de entrevista</h4><div id="r-individual-entrevista"></div></div>
+            <div class="print-section"><h4 style="background:#000; color:#fff; padding:5px;">III. Análisis de influencias</h4><div style="display:flex; gap:30px;"><div style="width:250px;"><canvas id="r-individual-chart"></canvas></div><div style="flex:1; border:2px solid #000; padding:15px; text-align:center;"><span style="font-size:8pt;">ÍNDICE DE AUTODETERMINACIÓN</span><div id="r-individual-score" style="font-size:40pt;">0%</div><div id="r-individual-label" style="background:#000;color:#fff;"></div></div></div><div id="r-individual-influencias-detalle"></div></div>
+            <div class="print-section"><h4 style="background:#000; color:#fff; padding:5px;">IV. Plan SMART</h4><table style="width:100%; border-collapse:collapse;" id="r-individual-smart"></table></div>
+            <div class="print-section"><h4 style="background:#000; color:#fff; padding:5px;">V. Sesiones</h4><div id="r-individual-sesiones" style="display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:15px;"></div></div>
+            <div class="print-section"><h4 style="background:#000; color:#fff; padding:5px;">VI. Diagnóstico</h4><p id="r-individual-diag"></p><div id="r-individual-recomendaciones"></div></div>
+            <div style="margin-top:100px; display:flex; justify-content:space-around;"><div style="width:200px; border-top:2px solid #000; padding-top:10px;">Firma del estudiante</div><div style="width:200px; border-top:2px solid #000; padding-top:10px;">Firma del orientador</div></div>
+        </div>
+    </div>
+
+    <!-- REPORTE GENERAL -->
+    <div id="reporte-general" class="max-w-5xl mx-auto shadow-none">
+        <div class="no-print flex justify-between items-center mb-8 bg-white p-6 rounded-2xl shadow-lg border border-indigo-100">
+            <div class="flex items-center gap-3">
+                <span class="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></span>
+                <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Reporte General del Equipo</p>
+            </div>
+            <div class="flex gap-4">
+                <button onclick="volverAlListadoDesdeGeneral()" class="px-6 py-3 border-2 border-slate-200 rounded-xl text-[10px] font-black uppercase hover:bg-slate-50 transition">Volver al listado</button>
+                <button onclick="window.print()" class="px-8 py-3 bg-indigo-600 text-white rounded-xl text-[10px] font-black uppercase tracking-widest shadow-lg hover:bg-indigo-700 transition">Imprimir reporte</button>
+            </div>
+        </div>
+        <div class="report-content bg-white p-12 border-4 border-slate-900 relative" id="reporte-general-contenido">
+            <div style="display: flex; justify-content: space-between; border-bottom: 5px solid #000; padding-bottom: 20px; margin-bottom: 30px;">
+                <div style="width: 80px;"><svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="45" stroke="black" stroke-width="2"/><path d="M30 40 L50 20 L70 40 M50 20 V80 M30 60 H70" stroke="black" stroke-width="5"/></svg></div>
+                <div style="flex:1; text-align:center;"><h1 style="font-size:16pt; font-weight:900;">Universidad Nacional Autónoma de Honduras</h1><h2 style="font-size:12pt;">Facultad de Humanidades y Artes</h2><h3 style="font-size:10pt;">Departamento de Pedagogía</h3></div>
+                <div style="width:80px; text-align:right; font-size:8pt;">Reporte General<br>2026</div>
+            </div>
+            <h2 class="text-xl font-black uppercase mb-6">Estadísticas del grupo</h2>
+            <div id="general-stats" class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8"></div>
+            <div class="mb-8">
+                <h3 class="text-lg font-bold mb-2">Distribución por nivel de autodeterminación</h3>
+                <canvas id="general-chart-pie" width="300" height="300" style="max-width:400px;"></canvas>
+            </div>
+            <div class="mb-8">
+                <h3 class="text-lg font-bold mb-2">Promedio de influencias</h3>
+                <canvas id="general-chart-bar" width="400" height="250"></canvas>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-2">Listado de estudiantes e índices</h3>
+                <table class="w-full border-collapse border border-slate-300">
+                    <thead><tr class="bg-slate-100"><th class="border p-2">Nombre</th><th class="border p-2">Índice de autodeterminación</th><th class="border p-2">Nivel</th></tr></thead>
+                    <tbody id="general-tabla"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 🔥 CONFIGURACIÓN DE FIREBASE (TUS CREDENCIALES YA INCLUIDAS) 🔥
+        const firebaseConfig = {
+            apiKey: "AIzaSyBXJXjsftrIyQKjgFgY5yjFrRJToYFHd4U",
+            authDomain: "orientacion-unah.firebaseapp.com",
+            projectId: "orientacion-unah",
+            storageBucket: "orientacion-unah.firebasestorage.app",
+            messagingSenderId: "5638188709",
+            appId: "1:5638188709:web:dfc0c1eb5aca2cb04b274c",
+            measurementId: "G-J9MZ8VEZPH"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        const COLLECTION_NAME = "estudiantes";
+
+        // ---------- VARIABLES GLOBALES ----------
+        let currentUserId = null;
+        let currentUserData = null;
+        let currentStep = 1;
+        let chartIndividual = null;
+        let chartPie = null, chartBar = null;
+        let metas = [];
+        let sesiones = [];
+
+        // ---------- FUNCIONES DE FIRESTORE ----------
+        async function cargarListadoDesdeFirestore() {
+            const snapshot = await db.collection(COLLECTION_NAME).get();
+            const usuarios = [];
+            snapshot.forEach(doc => {
+                usuarios.push({ id: doc.id, ...doc.data() });
+            });
+            renderizarListado(usuarios);
+        }
+
+        async function guardarEstudiante(id, data) {
+            if (id) {
+                await db.collection(COLLECTION_NAME).doc(id).update(data);
+            } else {
+                const docRef = await db.collection(COLLECTION_NAME).add(data);
+                return docRef.id;
+            }
+        }
+
+        async function eliminarEstudiante(id) {
+            await db.collection(COLLECTION_NAME).doc(id).delete();
+        }
+
+        async function obtenerEstudiante(id) {
+            const doc = await db.collection(COLLECTION_NAME).doc(id).get();
+            return doc.exists ? { id: doc.id, ...doc.data() } : null;
+        }
+
+        // ---------- RENDERIZAR LISTADO ----------
+        function renderizarListado(usuarios) {
+            const container = document.getElementById('user-cards');
+            if (!container) return;
+            container.innerHTML = '';
+
+            if (usuarios.length === 0) {
+                container.innerHTML = '<p class="text-slate-500 col-span-3 text-center py-10">No hay estudiantes registrados. Crea uno nuevo.</p>';
+                return;
+            }
+
+            usuarios.forEach(user => {
+                const indice = calcularIndiceAutodeterminacion(user);
+                const nivel = obtenerNivel(indice);
+                const card = document.createElement('div');
+                card.className = 'bg-indigo-50 p-6 rounded-2xl border-2 border-indigo-100 hover:shadow-xl transition';
+                card.innerHTML = `
+                    <h3 class="text-lg font-black text-indigo-900 mb-2">${user.entrevistado || 'Sin nombre'}</h3>
+                    <p class="text-xs text-slate-600 mb-1">Índice: ${indice}%</p>
+                    <p class="text-xs font-bold ${nivel.clase} mb-4">${nivel.texto}</p>
+                    <div class="flex justify-end gap-2">
+                        <button onclick="seleccionarUsuario('${user.id}')" class="bg-indigo-600 text-white px-4 py-2 rounded-xl text-xs font-bold uppercase hover:bg-indigo-700 transition">Abrir ficha</button>
+                        <button onclick="eliminarUsuario('${user.id}')" class="bg-red-500 text-white px-4 py-2 rounded-xl text-xs font-bold uppercase hover:bg-red-600 transition">Eliminar</button>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // ---------- CREAR NUEVO ESTUDIANTE ----------
+        async function crearNuevoEstudiante() {
+            const nombre = prompt('Nombre completo del estudiante:', 'Nuevo estudiante');
+            if (!nombre) return;
+
+            const nuevo = {
+                entrevistado: nombre,
+                entrevistador: '',
+                fecha: '',
+                edad: '',
+                preg1: '', preg2: '', preg3: '', preg4: '', preg5: '',
+                infFam: 3, infFamCom: '',
+                infSoc: 3, infSocCom: '',
+                infEdu: 3, infEduCom: '',
+                infClaridad: 3,
+                metas: [],
+                sesiones: []
+            };
+
+            const id = await guardarEstudiante(null, nuevo);
+            cargarListadoDesdeFirestore();
+            seleccionarUsuario(id);
+        }
+
+        // ---------- SELECCIONAR USUARIO ----------
+        async function seleccionarUsuario(userId) {
+            const usuario = await obtenerEstudiante(userId);
+            if (!usuario) return;
+            currentUserId = userId;
+            currentUserData = usuario;
+
+            document.getElementById('current-user-name-display').innerText = usuario.entrevistado || 'Sin nombre';
+            metas = usuario.metas || [];
+            sesiones = usuario.sesiones || [];
+
+            document.getElementById('entrevistado').value = usuario.entrevistado || '';
+            document.getElementById('entrevistador').value = usuario.entrevistador || '';
+            document.getElementById('fecha').value = usuario.fecha || '';
+            document.getElementById('edad').value = usuario.edad || '';
+
+            document.getElementById('preg1').value = usuario.preg1 || '';
+            document.getElementById('preg2').value = usuario.preg2 || '';
+            document.getElementById('preg3').value = usuario.preg3 || '';
+            document.getElementById('preg4').value = usuario.preg4 || '';
+            document.getElementById('preg5').value = usuario.preg5 || '';
+
+            document.getElementById('inf-fam').value = usuario.infFam || 3;
+            document.getElementById('inf-fam-com').value = usuario.infFamCom || '';
+            document.getElementById('inf-soc').value = usuario.infSoc || 3;
+            document.getElementById('inf-soc-com').value = usuario.infSocCom || '';
+            document.getElementById('inf-edu').value = usuario.infEdu || 3;
+            document.getElementById('inf-edu-com').value = usuario.infEduCom || '';
+            document.getElementById('inf-claridad').value = usuario.infClaridad || 3;
+
+            renderizarMetas();
+            renderizarSesiones();
+
+            document.getElementById('user-list-container').classList.add('hidden');
+            document.getElementById('app-container').classList.remove('hidden');
+            document.getElementById('reporte-final').classList.remove('visible-report');
+
+            currentStep = 1;
+            document.querySelectorAll('.step-content').forEach(el => el.classList.remove('active'));
+            document.getElementById('step1').classList.add('active');
+            document.getElementById('stepCounter').innerText = 'ETAPA 1/6';
+            document.getElementById('nextBtn').style.display = 'inline-block';
+        }
+
+        // ---------- GUARDAR DATOS ACTUALES EN FIRESTORE ----------
+        async function guardarDatosActuales() {
+            if (!currentUserId) return;
+
+            const datos = {
+                entrevistado: document.getElementById('entrevistado').value,
+                entrevistador: document.getElementById('entrevistador').value,
+                fecha: document.getElementById('fecha').value,
+                edad: document.getElementById('edad').value,
+                preg1: document.getElementById('preg1').value,
+                preg2: document.getElementById('preg2').value,
+                preg3: document.getElementById('preg3').value,
+                preg4: document.getElementById('preg4').value,
+                preg5: document.getElementById('preg5').value,
+                infFam: parseInt(document.getElementById('inf-fam').value) || 3,
+                infFamCom: document.getElementById('inf-fam-com').value,
+                infSoc: parseInt(document.getElementById('inf-soc').value) || 3,
+                infSocCom: document.getElementById('inf-soc-com').value,
+                infEdu: parseInt(document.getElementById('inf-edu').value) || 3,
+                infEduCom: document.getElementById('inf-edu-com').value,
+                infClaridad: parseInt(document.getElementById('inf-claridad').value) || 3,
+                metas: metas,
+                sesiones: sesiones
+            };
+
+            await guardarEstudiante(currentUserId, datos);
+            currentUserData = datos;
+        }
+
+        // ---------- AUTO-GUARDADO ----------
+        function configurarAutoGuardado() {
+            const inputs = document.querySelectorAll('#mainForm input, #mainForm textarea, #mainForm select');
+            inputs.forEach(input => {
+                input.removeEventListener('input', guardarDatosActuales);
+                input.addEventListener('input', guardarDatosActuales);
+            });
+        }
+
+        // ---------- METAS ----------
+        function renderizarMetas() {
+            const container = document.getElementById('smartContainer');
+            if (!container) return;
+            container.innerHTML = '';
+            metas.forEach((meta, index) => {
+                const div = document.createElement('div');
+                div.className = 'p-6 border-2 border-slate-100 rounded-3xl bg-white relative';
+                div.innerHTML = `
+                    <button type="button" onclick="eliminarMeta(${index})" class="absolute top-2 right-2 text-red-400 hover:text-red-600 text-xl">&times;</button>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="col-span-2">
+                            <label class="text-[10px] font-black text-indigo-400 uppercase">Objetivo</label>
+                            <input type="text" value="${(meta.objetivo || '').replace(/"/g, '&quot;')}" onchange="actualizarMeta(${index}, 'objetivo', this.value)" class="w-full p-3 border rounded-xl bg-slate-50">
+                        </div>
+                        <div>
+                            <label class="text-[10px] font-black text-indigo-400 uppercase">Plazo (fecha)</label>
+                            <input type="date" value="${meta.plazo || ''}" onchange="actualizarMeta(${index}, 'plazo', this.value)" class="w-full p-3 border rounded-xl bg-slate-50">
+                        </div>
+                        <div>
+                            <label class="text-[10px] font-black text-indigo-400 uppercase">Estrategia</label>
+                            <input type="text" value="${meta.estrategia || ''}" onchange="actualizarMeta(${index}, 'estrategia', this.value)" class="w-full p-3 border rounded-xl bg-slate-50">
+                        </div>
+                        <div class="col-span-2">
+                            <label class="text-[10px] font-black text-indigo-400 uppercase">Recursos necesarios</label>
+                            <input type="text" value="${meta.recursos || ''}" onchange="actualizarMeta(${index}, 'recursos', this.value)" class="w-full p-3 border rounded-xl bg-slate-50">
+                        </div>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function agregarMeta() {
+            metas.push({ objetivo: '', plazo: '', estrategia: '', recursos: '' });
+            renderizarMetas();
+            guardarDatosActuales();
+        }
+
+        function actualizarMeta(index, campo, valor) {
+            metas[index][campo] = valor;
+            guardarDatosActuales();
+        }
+
+        function eliminarMeta(index) {
+            metas.splice(index, 1);
+            renderizarMetas();
+            guardarDatosActuales();
+        }
+
+        // ---------- SESIONES ----------
+        function renderizarSesiones() {
+            const container = document.getElementById('sesionesContainer');
+            if (!container) return;
+            container.innerHTML = '';
+            sesiones.forEach((sesion, index) => {
+                const div = document.createElement('div');
+                div.className = 'p-5 border-2 border-slate-100 rounded-3xl bg-white relative sesion-item';
+                div.innerHTML = `
+                    <button type="button" onclick="eliminarSesion(${index})" class="absolute top-2 right-2 text-red-400 hover:text-red-600 text-xl">&times;</button>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                            <label class="text-[10px] font-black text-indigo-400 uppercase">Fecha</label>
+                            <input type="date" value="${sesion.fecha || ''}" onchange="actualizarSesion(${index}, 'fecha', this.value)" class="w-full p-3 border rounded-xl bg-slate-50">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="text-[10px] font-black text-indigo-400 uppercase">Objetivo de la sesión</label>
+                            <input type="text" value="${sesion.objetivo || ''}" onchange="actualizarSesion(${index}, 'objetivo', this.value)" class="w-full p-3 border rounded-xl bg-slate-50">
+                        </div>
+                        <div class="md:col-span-3">
+                            <label class="text-[10px] font-black text-indigo-400 uppercase">Observaciones / acuerdos</label>
+                            <textarea rows="2" onchange="actualizarSesion(${index}, 'observaciones', this.value)" class="w-full p-3 border rounded-xl bg-slate-50">${sesion.observaciones || ''}</textarea>
+                        </div>
+                        <div class="md:col-span-3 flex items-center gap-2">
+                            <input type="checkbox" ${sesion.entrevista ? 'checked' : ''} onchange="actualizarSesion(${index}, 'entrevista', this.checked)" class="w-4 h-4 accent-indigo-600">
+                            <span class="text-xs">En esta sesión se aplicó la entrevista de autodescubrimiento</span>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function agregarSesion() {
+            sesiones.push({ fecha: '', objetivo: '', observaciones: '', entrevista: false });
+            renderizarSesiones();
+            guardarDatosActuales();
+        }
+
+        function actualizarSesion(index, campo, valor) {
+            sesiones[index][campo] = valor;
+            guardarDatosActuales();
+        }
+
+        function eliminarSesion(index) {
+            sesiones.splice(index, 1);
+            renderizarSesiones();
+            guardarDatosActuales();
+        }
+
+        // ---------- NAVEGACIÓN ----------
+        function changeStep(n) {
+            if (currentStep + n < 1 || currentStep + n > 6) return;
+            currentStep += n;
+            document.querySelectorAll('.step-content').forEach(el => el.classList.remove('active'));
+            document.getElementById(`step${currentStep}`).classList.add('active');
+            document.getElementById('stepCounter').innerText = `ETAPA ${currentStep}/6`;
+            const nextBtn = document.getElementById('nextBtn');
+            if (currentStep === 6) {
+                nextBtn.style.display = 'none';
+            } else {
+                nextBtn.style.display = 'inline-block';
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            guardarDatosActuales();
+        }
+
+        // ---------- VOLVER AL LISTADO ----------
+        async function volverAlListado() {
+            await guardarDatosActuales();
+            currentUserId = null;
+            currentUserData = null;
+            document.getElementById('app-container').classList.add('hidden');
+            document.getElementById('user-list-container').classList.remove('hidden');
+            document.getElementById('reporte-final').classList.remove('visible-report');
+            cargarListadoDesdeFirestore();
+        }
+
+        // ---------- ELIMINAR USUARIO ----------
+        async function eliminarUsuario(userId) {
+            if (confirm('¿Estás seguro de eliminar este estudiante? Se perderán todos sus datos.')) {
+                await eliminarEstudiante(userId);
+                cargarListadoDesdeFirestore();
+            }
+        }
+
+        // ---------- FUNCIONES DE CÁLCULO ----------
+        function calcularIndiceAutodeterminacion(d) {
+            const infFam = d.infFam || 3;
+            const infSoc = d.infSoc || 3;
+            const infEdu = d.infEdu || 3;
+            const claridad = d.infClaridad || 3;
+            const pesoFam = (6 - infFam) * 2;
+            const pesoSoc = (6 - infSoc) * 2;
+            const pesoEdu = (6 - infEdu) * 2;
+            const pesoClar = claridad * 4;
+            let score = Math.round(((pesoFam + pesoSoc + pesoEdu + pesoClar) / 44) * 100);
+            return Math.min(100, Math.max(0, score));
+        }
+
+        function obtenerNivel(score) {
+            if (score >= 75) return { texto: 'ALTA AUTODETERMINACIÓN', clase: 'text-green-600', diagnostico: 'El estudiante muestra una clara percepción de su propósito y baja interferencia de influencias externas.', recomendacion: 'Potenciar la autonomía mediante proyectos concretos.' };
+            if (score >= 50) return { texto: 'AUTODETERMINACIÓN MODERADA', clase: 'text-yellow-600', diagnostico: 'Existe claridad pero las influencias externas generan dudas.', recomendacion: 'Trabajar en diferenciación entre deseos propios y ajenos.' };
+            return { texto: 'BAJA AUTODETERMINACIÓN', clase: 'text-red-600', diagnostico: 'Predominan influencias externas y baja claridad.', recomendacion: 'Priorizar autoconocimiento y análisis de creencias limitantes.' };
+        }
+
+        // ---------- GENERAR INFORME INDIVIDUAL ----------
+        async function generarInformeIndividual() {
+            await guardarDatosActuales();
+            if (!currentUserData) return;
+
+            const d = currentUserData;
+
+            document.getElementById('r-individual-ident').innerHTML = `
+                <tr><td><strong>Estudiante:</strong></td><td>${d.entrevistado || '---'}</td><td><strong>Edad:</strong></td><td>${d.edad || '---'}</td></tr>
+                <tr><td><strong>Orientador:</strong></td><td colspan="3">${d.entrevistador || '---'}</td></tr>
+                <tr><td><strong>Fecha inicio:</strong></td><td colspan="3">${d.fecha || '---'}</td></tr>
+            `;
+
+            const preguntas = [d.preg1, d.preg2, d.preg3, d.preg4, d.preg5];
+            let entrevistaHTML = '';
+            if (preguntas.some(p => p)) {
+                entrevistaHTML = '<ul style="list-style:disc; padding-left:20px;">' + 
+                    preguntas.map((p,i) => p ? `<li><strong>Pregunta ${i+1}:</strong> ${p}</li>` : '').join('') + '</ul>';
+            } else {
+                entrevistaHTML = '<p>No se registraron respuestas.</p>';
+            }
+            document.getElementById('r-individual-entrevista').innerHTML = entrevistaHTML;
+
+            const valores = [d.infFam, d.infSoc, d.infEdu, d.infClaridad];
+            const ctx = document.getElementById('r-individual-chart').getContext('2d');
+            if (chartIndividual) chartIndividual.destroy();
+            chartIndividual = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: ['Influencia familiar', 'Influencia social', 'Influencia educativa', 'Claridad'],
+                    datasets: [{
+                        data: valores,
+                        backgroundColor: 'rgba(0,0,0,0.05)',
+                        borderColor: '#000',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#000',
+                        pointRadius: 4
+                    }]
+                },
+                options: { scales: { r: { min: 1, max: 5, ticks: { stepSize: 1 } } }, plugins: { legend: { display: false } } }
+            });
+
+            const indice = calcularIndiceAutodeterminacion(d);
+            document.getElementById('r-individual-score').innerText = indice + '%';
+            const nivel = obtenerNivel(indice);
+            document.getElementById('r-individual-label').innerText = nivel.texto;
+            document.getElementById('r-individual-diag').innerText = nivel.diagnostico;
+            document.getElementById('r-individual-recomendaciones').innerText = nivel.recomendacion;
+
+            let detalle = '';
+            if (d.infFamCom) detalle += `<p><strong>Familia:</strong> ${d.infFamCom}</p>`;
+            if (d.infSocCom) detalle += `<p><strong>Amigos:</strong> ${d.infSocCom}</p>`;
+            if (d.infEduCom) detalle += `<p><strong>Educación:</strong> ${d.infEduCom}</p>`;
+            document.getElementById('r-individual-influencias-detalle').innerHTML = detalle || '<p>Sin comentarios.</p>';
+
+            let smartHTML = '';
+            (d.metas || []).forEach(m => {
+                if (m.objetivo) {
+                    smartHTML += `<tr><td style="border:1px solid #000; padding:8px;">${m.objetivo}</td><td style="border:1px solid #000; padding:8px;">${m.plazo || '—'}</td><td style="border:1px solid #000; padding:8px;">${m.estrategia || '—'}</td><td style="border:1px solid #000; padding:8px;">${m.recursos || '—'}</td></tr>`;
+                }
+            });
+            if (!smartHTML) smartHTML = '<tr><td colspan="4" style="text-align:center;">No hay metas SMART.</td></tr>';
+            document.getElementById('r-individual-smart').innerHTML = smartHTML;
+
+            let sesionesHTML = '';
+            (d.sesiones || []).forEach((s, idx) => {
+                sesionesHTML += `
+                    <div style="border:1px solid #000; padding:10px; border-radius:8px;">
+                        <strong>Sesión ${idx+1}</strong> ${s.fecha ? ' - ' + s.fecha : ''}<br>
+                        <em>Objetivo:</em> ${s.objetivo || 'No especificado'}<br>
+                        <em>Observaciones:</em> ${s.observaciones || '—'}<br>
+                        ${s.entrevista ? '<span style="background:#000; color:#fff; padding:2px 5px;">Entrevista aplicada</span>' : ''}
+                    </div>
+                `;
+            });
+            if (!sesionesHTML) sesionesHTML = '<p>No hay sesiones registradas.</p>';
+            document.getElementById('r-individual-sesiones').innerHTML = sesionesHTML;
+
+            document.getElementById('app-container').classList.add('hidden');
+            document.getElementById('reporte-final').classList.add('visible-report');
+        }
+
+        function volverAlFormulario() {
+            document.getElementById('reporte-final').classList.remove('visible-report');
+            document.getElementById('app-container').classList.remove('hidden');
+        }
+
+        function dispararImpresionIndividual() {
+            window.print();
+        }
+
+        // ---------- REPORTE GENERAL ----------
+        async function mostrarReporteGeneral() {
+            document.getElementById('user-list-container').classList.add('hidden');
+            document.getElementById('reporte-general').classList.add('visible-report');
+            await renderizarReporteGeneral();
+        }
+
+        async function renderizarReporteGeneral() {
+            const snapshot = await db.collection(COLLECTION_NAME).get();
+            const usuarios = [];
+            snapshot.forEach(doc => usuarios.push({ id: doc.id, ...doc.data() }));
+
+            if (usuarios.length === 0) {
+                document.getElementById('general-stats').innerHTML = '<p class="col-span-4 text-center">No hay estudiantes registrados.</p>';
+                return;
+            }
+
+            const total = usuarios.length;
+            let sumIndice = 0, sumFam = 0, sumSoc = 0, sumEdu = 0, sumClar = 0;
+            const niveles = { alta: 0, moderada: 0, baja: 0 };
+
+            usuarios.forEach(u => {
+                const indice = calcularIndiceAutodeterminacion(u);
+                sumIndice += indice;
+                sumFam += u.infFam || 3;
+                sumSoc += u.infSoc || 3;
+                sumEdu += u.infEdu || 3;
+                sumClar += u.infClaridad || 3;
+                if (indice >= 75) niveles.alta++;
+                else if (indice >= 50) niveles.moderada++;
+                else niveles.baja++;
+            });
+
+            const promIndice = Math.round(sumIndice / total);
+            const promFam = (sumFam / total).toFixed(1);
+            const promSoc = (sumSoc / total).toFixed(1);
+            const promEdu = (sumEdu / total).toFixed(1);
+            const promClar = (sumClar / total).toFixed(1);
+
+            document.getElementById('general-stats').innerHTML = `
+                <div class="bg-indigo-50 p-4 rounded-xl text-center"><span class="text-3xl font-black">${total}</span><br>Estudiantes</div>
+                <div class="bg-indigo-50 p-4 rounded-xl text-center"><span class="text-3xl font-black">${promIndice}%</span><br>Índice promedio</div>
+                <div class="bg-indigo-50 p-4 rounded-xl text-center"><span class="text-3xl font-black">${promClar}</span><br>Claridad promedio</div>
+                <div class="bg-indigo-50 p-4 rounded-xl text-center"><span class="text-3xl font-black">${niveles.alta}</span><br>Alta autodeterminación</div>
+            `;
+
+            const ctxPie = document.getElementById('general-chart-pie').getContext('2d');
+            if (chartPie) chartPie.destroy();
+            chartPie = new Chart(ctxPie, {
+                type: 'pie',
+                data: {
+                    labels: ['Alta', 'Moderada', 'Baja'],
+                    datasets: [{
+                        data: [niveles.alta, niveles.moderada, niveles.baja],
+                        backgroundColor: ['#22c55e', '#eab308', '#ef4444']
+                    }]
+                }
+            });
+
+            const ctxBar = document.getElementById('general-chart-bar').getContext('2d');
+            if (chartBar) chartBar.destroy();
+            chartBar = new Chart(ctxBar, {
+                type: 'bar',
+                data: {
+                    labels: ['Influencia familiar', 'Influencia social', 'Influencia educativa', 'Claridad'],
+                    datasets: [{
+                        data: [promFam, promSoc, promEdu, promClar],
+                        backgroundColor: '#4f46e5'
+                    }]
+                },
+                options: { scales: { y: { min: 1, max: 5, stepSize: 1 } }, plugins: { legend: { display: false } } }
+            });
+
+            let filas = '';
+            usuarios.forEach(u => {
+                const indice = calcularIndiceAutodeterminacion(u);
+                const nivel = obtenerNivel(indice).texto;
+                filas += `<tr><td class="border p-2">${u.entrevistado || 'Sin nombre'}</td><td class="border p-2">${indice}%</td><td class="border p-2">${nivel}</td></tr>`;
+            });
+            document.getElementById('general-tabla').innerHTML = filas;
+        }
+
+        function volverAlListadoDesdeGeneral() {
+            document.getElementById('reporte-general').classList.remove('visible-report');
+            document.getElementById('user-list-container').classList.remove('hidden');
+            cargarListadoDesdeFirestore();
+        }
+
+        // ---------- INICIALIZACIÓN ----------
+        document.addEventListener('DOMContentLoaded', () => {
+            cargarListadoDesdeFirestore();
+            configurarAutoGuardado();
+        });
+
+        // Exponer funciones globalmente
+        window.crearNuevoEstudiante = crearNuevoEstudiante;
+        window.seleccionarUsuario = seleccionarUsuario;
+        window.eliminarUsuario = eliminarUsuario;
+        window.volverAlListado = volverAlListado;
+        window.changeStep = changeStep;
+        window.agregarMeta = agregarMeta;
+        window.actualizarMeta = actualizarMeta;
+        window.eliminarMeta = eliminarMeta;
+        window.agregarSesion = agregarSesion;
+        window.actualizarSesion = actualizarSesion;
+        window.eliminarSesion = eliminarSesion;
+        window.generarInformeIndividual = generarInformeIndividual;
+        window.volverAlFormulario = volverAlFormulario;
+        window.dispararImpresionIndividual = dispararImpresionIndividual;
+        window.mostrarReporteGeneral = mostrarReporteGeneral;
+        window.volverAlListadoDesdeGeneral = volverAlListadoDesdeGeneral;
+    </script>
 </body>
-
 </html>
